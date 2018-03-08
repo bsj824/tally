@@ -1,0 +1,160 @@
+body{
+    background-image: url("../img/fhs.jpg");
+    background-size: 100% 2000px;
+
+}
+.fh{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 30px 30px;
+    background-image: url("../img/返回.png");
+    background-size: 60px 60px;
+}
+.head{
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-350px 0 0 -489px;
+}
+.head .header{
+    width: 980px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 999;
+    height: 100px;
+    padding: 30px;
+}
+.header .button{
+    width: auto;
+    float: right;
+    text-align: right;
+    color: #d9d9d9;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 262px;
+}
+.header .button .reg{
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid #ff4f3f;
+    border-radius: 3px;
+    text-align: center;
+    transition: all .2s;
+}
+.header .button :hover{
+    background: #ff4f3f;
+    color: #fff;
+}
+.header .title{
+    float: left;
+    padding-left: 268px;
+}
+.header .title h1{
+    font-size: 24px;
+
+    float: left;
+    color: #ff4f3f;
+    margin-top: 1px;
+}
+.dl_box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-150px 0 0 -200px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ffcccc;
+    opacity: 0.8;
+    width: 400px;
+
+}
+.dl_box .dl_form{
+    width: 332px;
+    position: relative;
+    margin: auto;
+}
+.dl_form .dl_title{
+    display: block;
+
+}
+.dl_title .dl_cy{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+.fix{
+    margin:0 0 20px;
+    zoom:1;
+}
+.input-warp{
+    position: relative;
+    display: block;
+}
+.input-warp input{
+    height: 40px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.pw{
+    margin: 0 0 20px;
+    zoom: 1;
+}
+.foot_cnt{
+    margin: auto;
+    width: 332px;
+    height: 30px;
+    zoom: 1;
+    font-size: 14px;
+}
+.foot_cnt .wjmm{
+    outline: none;
+    color: #666;
+    float: right;
+    text-decoration: none;
+    margin-top: 6px;
+}
+.btn-row{
+    margin: 0 0 20px;
+    text-align: center;
+    outline: 0;
+}
+.btn-row .qdl{
+    font-size: 20px;
+    padding: 13px 0;
+    background-color: #ff4f3f;
+    border-radius: 4px;
+    color: #fff;
+    border:1px solid #ff4f3f;
+    display: block;
+    width: 332px;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+}
+.sub-txt{
+    display: inline-block;
+    font-style: normal;
+}

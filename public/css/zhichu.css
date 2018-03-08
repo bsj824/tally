@@ -1,0 +1,41 @@
+.head{
+    width: 100%;
+    height: 580px;
+    background-image: url("../img/u_r1_c1.jpg");
+    background-size: 100% 580px;
+}
+.head .header{
+    margin: auto;
+}
+.header .center{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+.center h3{
+    color: #fff;
+    font-size: 37px;
+    display: inline-block;
+}
+.zc_left{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.zc_left .z_title{
+    font-size: 33px;
+    color: #fff ;
+    float: left;
+
+}
+.xsj{
+    width: 200px;
+    height: 50px;
+    margin: 15px 50px;
+}
+.xsj span{
+    font-size: 40px;
+    color: #fff;
+}

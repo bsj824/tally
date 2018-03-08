@@ -1,0 +1,119 @@
+.head{
+    width: 100%;
+    height: 610px;
+    background-image: url("../img/bj (2).jpg");
+    background-size: 100% 610px;
+}
+.head .left{
+    float: right;
+}
+.left .title{
+    color: #666666;
+    margin:50px;
+    padding:10px;
+    width:30px;
+    font-size:35px;
+    text-align:center;
+    line-height:150%;
+}
+.main{
+    width: 100%;
+    height: 970px;
+    margin-top: 50px;
+}
+.main .main_h img{
+    height: 50px;
+    width: 100%;
+}
+.main .wp-title_content{
+    word-wrap: break-word;
+    padding: 0px;
+    border: 0px solid transparent;
+    height: 120px;
+    width: 150px;
+    display: block;
+    left: 437px;
+    top: 720px;
+    position: absolute;
+    z-index: 101;
+}
+.main span{
+    font-size: 26px;
+    line-height: 36.4px;
+    color: rgb(51, 51, 51);
+}
+.main .main_c{
+    width: 100%;
+    height: 300px;
+    margin-top: 65px;
+}
+.main_c .c_list{
+    width: 95%;
+    height: 260px;
+    padding: 20px ;
+
+}
+.c_list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    height: 260px;
+    margin: auto;
+}
+.c_list ul .first{
+    width:100%;
+    height: 100px;
+    padding-left: 20px;
+
+}
+.first a{
+    text-decoration: none;
+    color: #927947;
+    font-size: 18px;
+
+}
+.first p{
+    width: 100%;
+    height:60px;
+    color: #BEAA7E;
+}
+.foot{
+    width: 100%;
+    height: 100px;
+}
+.foot .tb{
+    list-style-type: none;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.tb li{
+    width: 25%;
+    height: 100px;
+    float: left;
+    display: inline;
+    margin: 0 20px;
+
+}
+
+.tb li .zb_t{
+    width: 50%;
+    height: 50px;
+}
+.zb_t img{
+    width: 100%;
+    height: 50px;
+}
+.zb_b{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.zb_b a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #555555;
+}
