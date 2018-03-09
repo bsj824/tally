@@ -2,6 +2,9 @@
 @section('css')
     <link rel="stylesheet" href="{!! asset('css/zc.css') !!}">
 @endsection
+@section('title')
+    注册
+    @endsection
 @section('content')
 <body>
 <div class="fh">
@@ -39,10 +42,10 @@
                             </div>
                              <div class="yzm">
                                  <span class="dib">
-                                     <input type="tel" maxlength="4" class="verify" name="verify" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
+                                     <input type="tel"  class="verify" name="verify" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
                                  </span>
                                  <label class="p_yzm">
-                                     <img src="img/new.jpg" alt="图形验证码"title="点击更换验证码" >
+                                     {!! captcha_img() !!}
                                  </label>
                              </div>
                             {{--<div class="yzm">

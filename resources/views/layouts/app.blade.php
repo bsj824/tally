@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>登录</title>
+    <title>@yield('title')</title>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="{{asset('lib/es5/es5-sham.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('lib/es5/es5-shim.min.js')}}"></script>

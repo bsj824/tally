@@ -2,6 +2,9 @@
 @section('css')
     <link rel="stylesheet" href="{!! asset('css/dl.css') !!}">
     @endsection
+@section('title')
+    登录
+@endsection
 @section('content')
 <body>
 <div class="fh">

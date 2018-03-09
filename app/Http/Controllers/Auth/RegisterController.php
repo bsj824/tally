@@ -51,6 +51,7 @@ class RegisterController extends Controller
             'name' => 'required',
             'phone' => 'required',
             'password' => 'required|min:6',
+            'captcha' => 'required|captcha'
         ]/*,[
             'name.required'=>'用户名不为空',
             'phone.required'=>'手机号不为空',
