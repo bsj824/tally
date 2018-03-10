@@ -1,34 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .head{
     width: 100%;
-    height: 150px;
+    height: 100px;
     background: #2875B1;
 }
-.head .header{
+.header{
     height: 100px;
+    position: relative;
 }
 .header .c_left{
-    width: 200px;
+    width: 50%;
     height: 100px;
-    display: block;
-    float: left;
-    margin-left: 40%;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    display: inline-block;
 }
 .c_left .my{
-    display: inline-block;
+    font-size: 18px;
     color: #fff;
-    font-size: 24px;
-    margin: 35px 70px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
 }
-.header .c_right{
-    width: 100px;
-    height: 100px;
-    display: block;
+.c_right{
+    width: 20%;
+    height: 50px;
     float: right;
 }
 .c_right img{
-    width: 32px;
-    height: 32px;
-    margin: 32px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin:32px 22px;
 }
 /*主体*/
 .main{
@@ -49,15 +56,15 @@
 .c_list ul li{
     list-style-type: none;
     width: 100%;
-    height: 110px;
+    height: 50px;
     color: #666;
     background: #fff;
     box-shadow: 1px 1px 3px #d9d9d9;
 }
 .c_list ul li>img{
-    width: 55px ;
-    height: 55px;
-    margin: -11px 10px;
+    width: 22px ;
+    height: 22px;
+    margin: -6px 10px;
 }
 .c_list ul li:hover{
     background: #f8f8f8b8;
@@ -66,17 +73,18 @@
 
 }
 .c_list ul li h4{
-    font-size: 28px;
-    padding:35px 30px;
+    font-size: 16px;
+    padding: 16px 10px;
+    font-weight: 300;
     display: inline-block;
 }
 .icon{
     float: right;
-    width:110px;
-    height: 110px;
+    width:50px;
+    height: 50px;
 }
 .icon img{
-    width: 32px;
-    height: 32px;
-    margin: 40px 30px;
+    width: 16px;
+    height: 16px;
+    margin: 15px 10px;
 }
