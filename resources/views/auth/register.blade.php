@@ -45,7 +45,7 @@
                                      <input type="tel"  class="verify" name="verify" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
                                  </span>
                                  <label class="p_yzm">
-                                     {!! captcha_img() !!}
+                                      <img onclick="this.src = '{!! captcha_src() !!}' + Math.random()" src="{!! captcha_src() !!}">
                                  </label>
                              </div>
                             {{--<div class="yzm">
