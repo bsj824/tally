@@ -3,40 +3,35 @@ body{
     background-size: 100% 2000px;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 .fh{
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
     background-image: url("../img/返回.png");
-    background-size: 60px 60px;
+    background-size:30px 30px;
 }
 .head{
     width: 100%;
+    height: 120px;
     border-bottom: 1px solid #e3e3e3;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:-350px 0 0 -489px;
 }
-.head .header{
-    width: 980px;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    z-index: 999;
-    height: 100px;
-    padding: 30px;
+.header{
+    height: 120px;
 }
+
 .header .button{
     width: auto;
     float: right;
+    display: inline-block;
     text-align: right;
     color: #d9d9d9;
     font-size: 14px;
     line-height: 30px;
-    padding-right: 262px;
+    padding: 40px 33px;
 }
 .header .button .reg{
     display: inline-block;
@@ -49,37 +44,47 @@ body{
     text-align: center;
     transition: all .2s;
 }
+
+
 .header .button :hover{
     background: #ff4f3f;
     color: #fff;
 }
+
+
+
 .header .title{
     float: left;
-    padding-left: 268px;
+    padding: 40px 33px;
+    display: inline-block;
 }
 .header .title h1{
     font-size: 24px;
-
+    font-weight: 400;
     float: left;
     color: #ff4f3f;
-    margin-top: 1px;
 }
+
+
+
 .dl_box{
     position:absolute;
     top:50%;
     left:50%;
-    margin:-150px 0 0 -200px;
+    margin:-120px 0 0 -157px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     background-color: #ffcccc;
     opacity: 0.8;
-    width: 400px;
 
 }
+.box{
+    width: 310px ;
+    height: 295px;
+}
 .dl_box .dl_form{
-    width: 332px;
     position: relative;
-    margin: auto;
+    margin-left:15px;
 }
 .dl_form .dl_title{
     display: block;
@@ -88,8 +93,9 @@ body{
 .dl_title .dl_cy{
     text-align: center;
     font-size: 24px;
+    margin-top: 20px;
     margin-bottom: 24px;
-    font-weight: 500;
+    font-weight: 300;
 }
 .fix{
     margin:0 0 20px;
@@ -100,9 +106,9 @@ body{
     display: block;
 }
 .input-warp input{
-    height: 40px;
+    height: 30px;
     display: block;
-    width: 100%;
+    width: 87%;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.4;
@@ -117,15 +123,20 @@ body{
 }
 .foot_cnt{
     margin: auto;
-    width: 332px;
     height: 30px;
     zoom: 1;
     font-size: 14px;
 }
-.foot_cnt .wjmm{
+.foot_cnt .zddl a{
     outline: none;
     color: #666;
-    float: right;
+    text-decoration: none;
+    margin-top: 6px;
+}
+.foot_cnt .wjmm a{
+    outline: none;
+    color: #666;
+    margin-left: 140px;
     text-decoration: none;
     margin-top: 6px;
 }
@@ -142,7 +153,7 @@ body{
     color: #fff;
     border:1px solid #ff4f3f;
     display: block;
-    width: 332px;
+    width: 285px;
     position: relative;
     margin-bottom: 0;
     font-weight: 400;
