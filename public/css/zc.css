@@ -1,18 +1,11 @@
 body{
-   background-image: url("../img/fhs.jpg");
-    background-size: 100% 2000px;
-    
+   background-image: url("../img/hw 1.jpg");
+    background-size: 100% 1500px;
+
 }
 *{
     margin: 0;
     padding: 0;
-}
-.fh{
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    background-image: url("../img/返回.png");
-    background-size:30px 30px;
 }
 .head{
     width: 100%;
@@ -39,7 +32,7 @@ body{
     width: 100px;
     height: 30px;
     margin-left: 20px;
-    border: 1px solid #ff4f3f;
+    border: 1px solid #ccc;
     border-radius: 3px;
     text-align: center;
     transition: all .2s;
@@ -55,14 +48,14 @@ body{
 
 .header .title{
     float: left;
-    padding: 40px 33px;
+    padding: 21px 33px;
     display: inline-block;
 }
 .header .title h1{
     font-size: 24px;
     font-weight: 400;
     float: left;
-    color: #ff4f3f;
+    color: #4e4c4c;
 }
 
 
@@ -82,13 +75,12 @@ body{
 .main .main_content{
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    background-color: #ffcccc;
-    opacity: 0.8;
     border: 1px solid #e3e3e3;
     margin-top: 160px;
 }
 .main_content .title{
     margin-left: 12px;
+    color: #ff4f3f;
     border-bottom: 1px solid #c1c1c1;
 }
 

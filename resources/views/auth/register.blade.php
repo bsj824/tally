@@ -7,8 +7,7 @@
     @endsection
 @section('content')
 <body>
-<div class="fh">
-</div>
+
 <div class="head">
     <div class="header">
         <div class="button">
