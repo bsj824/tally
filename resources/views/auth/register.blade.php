@@ -51,7 +51,7 @@
                             {{--<div class="yzm">
                                 <span class="dib">
                                     <input type="tel" maxlength="4" class="verify" name="verify" placeholder="请输入短信验证码" data-type="imagecode" data-error="请输入短信验证码" data-error-empty="请输入短信验证码"required>
-                                </span>
+                                    </span>
                                 <label class="verify_btn">
                                     <em class="send">发送验证码</em>
                                     <em class="resend">重新发送验证码</em>
