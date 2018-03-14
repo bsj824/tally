@@ -7,8 +7,6 @@
 @endsection
 @section('content')
 <body>
-<div class="fh">
-</div>
 <div class="head">
     <div class="header">
         <div class="button">
@@ -37,10 +35,11 @@
             </div>
         </div>
     <div class="foot_cnt">
-        <a href="" class="wjmm" target="_blank">忘记密码</a>
-        <label class="zddl">
+        <label>
             <input type="checkbox" class="icons"  style="width: 20px;height: 20px">
-            <a href="" class="wjmm" target="_blank">自动登录</a>
+            <a href="" class="zddl" target="_blank">自动登录</a>
+             <a href="" class="wjmm" target="_blank">忘记密码</a>
+
         </label>
     </div>
     <div class="btn-row">
