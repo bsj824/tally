@@ -31,6 +31,15 @@
                     <div class="sec">
                         <div class="sjh">
                             <div class="s_rel">
+                                <input type="tel" maxlength="11" class="mob" name="phone" placeholder="您的手机号" data-type="phone" data-error="请输入正确的手机号" data-error-empty="请输入手机号"required>
+                                @if ($errors->has('phone'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                            <div class="sjh">
+                            <div class="s_rel">
                                 <input type="tel" maxlength="11" class="mob" name="name" placeholder="您的用户名" data-type="phone" data-error="请输入正确的用户名" data-error-empty="请输入用户名"required>
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -39,9 +48,10 @@
                                 @endif
                             </div>
                         </div>
+                        </div>
                         <div class="yzm">
                            <span class="dib">
-                               <input type="tel" maxlength="5" class="verify" name="captcha" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
+                               <input type="tel" maxlength="5" class="verify" name="captcha" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入5位图形验证码" data-error-empty="请输入图形验证码"required>
                                @if ($errors->has('captcha'))
                                    <span class="help-block">
                                        <strong>{{ $errors->first('captcha') }}</strong>
@@ -49,7 +59,7 @@
                                @endif
                            </span>
                             <label class="p_yzm">
-                                <img src="{{captcha_src()}}" onclick="this.src='/captcha/default?'+Math.random()" alt="验证码">
+                                <img src="{{captcha_src()}}" onclick="this.src='/captcha/default?'+Math.random()"  alt="验证码">
                             </label>
                         </div>
 
