@@ -1,17 +1,17 @@
 @extends('layouts.app')
 @section('css')
     <link rel="stylesheet" href="{!! asset('css/zc.css') !!}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_ccg2lmenf3qsemi.css">
 @endsection
 @section('title')
     注册
     @endsection
 @section('content')
 <body>
-
 <div class="head">
     <div class="header">
         <div class="button">
-            <a href="" class="reg">登录已有账号</a>
+            <a href="" class="reg">注册新用户</a>
         </div>
         <div class="title">
             <h1 class="logo">财爷</h1>
@@ -58,12 +58,12 @@
                             </div>--}}
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
+                                    <input type="password" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
                                 </div>
                             </div>
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
+                                    <input type="password" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
                                 </div>
                             </div>
                         </div>
@@ -72,6 +72,12 @@
                                 <em class="sub-txt">注册</em>
                             </button>
                         </div>
+                        <div class="line">
+                            <span class="dsf">您还可以通过第三方登录</span>
+                        </div>
+                         <a href="javascrit:;">
+                          <i class="iconfont icon-github"style="font-size: 24px;"></i>
+                         </a>
                     </div>
                 </form>
             </div>
