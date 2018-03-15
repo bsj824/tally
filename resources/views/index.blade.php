@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>记账本</title>
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="{!! asset('css/homepage.css') !!}">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_rkm0p7cteoupu8fr.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_lb7hcph6enxywrk9.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_0adi9ftru1xj38fr.css">
