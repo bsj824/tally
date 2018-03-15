@@ -55,8 +55,6 @@ class RegisterController extends Controller
             'name.required'=>'用户名不为空',
             'phone.required'=>'手机号不为空',
             'password.min'=>'密码不能少于6位',
-            'captcha.required'=>'验证码不能为空',
-            'captcha.captcha'=>'验证码错误',
         ]);
     }
 
@@ -71,7 +69,6 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'phone' => $data['phone'],
-            'sign' =>'',
             'password' => bcrypt($data['password']),
         ]);
     }

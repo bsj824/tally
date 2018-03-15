@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 class LoginController extends Controller
 {
@@ -43,5 +45,13 @@ class LoginController extends Controller
         return 'phone';
     }
 
+    public function authenticate(Request $request)
+    {
+        $phone = $request->get('phone');
+        $password = $request->get('password');
+        if(Auth::attempt(['phone' => $phone,'password'=>$password],$request->get('remember'))){
+            return redirect()->intended('index');
+        }
+    }
 
 }

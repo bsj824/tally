@@ -11,7 +11,7 @@
 <div class="head">
     <div class="header">
         <div class="button">
-            <a href="" class="reg">登录已有账号</a>
+            <a href="{{route('login')}}" class="reg">登录已有账号</a>
         </div>
         <div class="title">
             <h1 class="logo">财爷</h1>
@@ -41,21 +41,12 @@
                             </div>
                              <div class="yzm">
                                  <span class="dib">
-                                     <input type="tel"  class="verify" name="verify" placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
+                                     <input type="tel" name="captcha" class="verify"  placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
                                  </span>
                                  <label class="p_yzm">
                                       <img onclick="this.src = '{!! captcha_src() !!}' + Math.random()" src="{!! captcha_src() !!}">
                                  </label>
                              </div>
-                            {{--<div class="yzm">
-                                <span class="dib">
-                                    <input type="tel" maxlength="4" class="verify" name="verify" placeholder="请输入短信验证码" data-type="imagecode" data-error="请输入短信验证码" data-error-empty="请输入短信验证码"required>
-                                    </span>
-                                <label class="verify_btn">
-                                    <em class="send">发送验证码</em>
-                                    <em class="resend">重新发送验证码</em>
-                                </label>
-                            </div>--}}
                             <div class="sjh">
                                 <div class="s_rel">
                                     <input type="text" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>

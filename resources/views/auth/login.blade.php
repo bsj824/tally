@@ -10,7 +10,7 @@
 <div class="head">
     <div class="header">
         <div class="button">
-            <a href="" class="reg">注册新用户</a>
+            <a href="{{route('register')}}" class="reg">注册新用户</a>
         </div>
         <div class="title">
             <h1 class="logo">财爷</h1>
@@ -32,7 +32,8 @@
                     @endif
                 </div>
             </div>
-            <input type="password" style="display: none">
+            <label>  <input type="password" style="display: none"></label>
+
             <div class="pw">
                 <div class="input-warp">
                     <input type="password" label="您的密码" placeholder="密码" noptncheck="true" class="paw" name="password" data-type="password" data-error="请输入密码" data-error-empty="请输入您的密码" required>
@@ -46,9 +47,9 @@
         </div>
     <div class="foot_cnt">
         <label>
-            <input type="checkbox" class="icons"  style="width: 20px;height: 20px">
-            <a href="" class="zddl" target="_blank">自动登录</a>
-             <a href="" class="wjmm" target="_blank">忘记密码</a>
+            {{--<input type="checkbox" class="icons"  style="width: 20px;height: 20px">--}}
+            <input value="remember me" type="checkbox" name="remember">自动登录
+            {{--<a href="" class="wjmm" target="_blank">忘记密码</a>--}}
 
         </label>
     </div>
