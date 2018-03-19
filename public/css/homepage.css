@@ -56,7 +56,6 @@ a,button,input{
     height: 300px;
 }
 .main_c .c_list{
-    width: 95%;
     height: 260px;
     padding: 20px ;
 
@@ -81,7 +80,6 @@ a,button,input{
 }
 .first p{
     width: 100%;
-    height: 40px;
     color: #BEAA7E;
     font-size: 14px;
 }

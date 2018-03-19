@@ -17,7 +17,7 @@ body{
 }
 
 .header .button{
-    width: auto;
+    width: 200px;
     float: right;
     display: inline-block;
     text-align: right;
