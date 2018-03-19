@@ -1,4 +1,4 @@
-@component('alert')
+
 <div class="foot">
     <ul class="footer">
         <a href="">
@@ -43,4 +43,3 @@
         </a>
     </ul>
 </div>
-    @endcomponent
