@@ -64,6 +64,8 @@ body{
     position:absolute;
     top:50%;
     left:50%;
+    width: 300px;
+    height: 320px;
     border: 1px solid #e3e3e3;
     margin:-120px 0 0 -157px;
     -webkit-border-radius: 4px;
@@ -140,13 +142,13 @@ body{
 }
 .btn-row .qdl{
     font-size: 20px;
-    padding: 13px 0;
+    padding: 11px 0;
     background-color: #ff4f3f;
     border-radius: 4px;
     color: #fff;
     border:1px solid #ff4f3f;
     display: block;
-    width: 285px;
+    width: 267px;
     position: relative;
     margin-bottom: 0;
     font-weight: 400;

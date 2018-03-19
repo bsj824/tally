@@ -49,12 +49,12 @@
                              </div>
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
+                                    <input type="password" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
                                 </div>
                             </div>
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
+                                    <input type="password" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
                                 </div>
                             </div>
                         </div>
