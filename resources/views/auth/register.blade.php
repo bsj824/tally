@@ -32,16 +32,31 @@
                             <div class="sjh">
                                 <div class="s_rel">
                                     <input type="tel" maxlength="11" class="mob" name="name" placeholder="用户名" data-error="请输入用户名" data-error-empty="请输入用户名"required>
+                                    @if ($errors->has('name'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="sjh">
                                 <div class="s_rel">
                                     <input type="tel" maxlength="11" class="mob" name="phone" placeholder="手机号" data-type="phone" data-error="请输入正确的手机号" data-error-empty="请输入手机号"required>
+                                    @if ($errors->has('phone'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                             </div>
                              <div class="yzm">
                                  <span class="dib">
                                      <input type="tel" name="captcha" class="verify"  placeholder="请输入图形验证码" data-type="imagecode" data-error="请输入4位图形验证码" data-error-empty="请输入图形验证码"required>
+                                     @if ($errors->has('captcha'))
+                                         <span class="help-block">
+                                        <strong>{{ $errors->first('captcha') }}</strong>
+                                    </span>
+                                     @endif
                                  </span>
                                  <label class="p_yzm">
                                       <img onclick="this.src = '{!! captcha_src() !!}' + Math.random()" src="{!! captcha_src() !!}">
@@ -49,12 +64,22 @@
                              </div>
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
+                                    <input type="password" class="mm" name="password" placeholder="您的密码" data-type="password" data-error="您的密码" data-error-empty="您的密码" required>
+                                    @if ($errors->has('password'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="sjh">
                                 <div class="s_rel">
-                                    <input type="text" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
+                                    <input type="password" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
+                                    @if ($errors->has(' password_confirmation'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first(' password_confirmation') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                             </div>
                         </div>

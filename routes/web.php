@@ -16,6 +16,6 @@
 });*/
 Route::Auth();
 
-Route::middleware(['Auth'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('/index', 'IndexController@index');
 });

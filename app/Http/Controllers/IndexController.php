@@ -23,6 +23,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('data');
+        return view('/index');
     }
 }

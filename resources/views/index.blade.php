@@ -43,7 +43,6 @@
         </div>
     </div>
 </div>
-</div>
 <div class="foot">
   <ul class="footer">
       <a href="">
