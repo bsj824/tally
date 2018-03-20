@@ -25,7 +25,7 @@
                 </div>
             </li>
         </a>
-        <a href="">
+        <a href="{{url('feed')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-yijianfankui" style="font-size: 22px;color: #fff"></i>

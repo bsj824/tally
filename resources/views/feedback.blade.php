@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>反馈</title>
-    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="{{asset('css/feed.css')}}">
 </head>
 <body>
 
-<form method="post" action="acform" class="forml">
+<form method="post" action="" class="forml">
     <div class="head">
         <div class="logo">
             <span>问题反馈</span>
@@ -19,21 +19,18 @@
           <ul class="formtop">
               <li>
                   <label class="lab">
-                      <em class="red">*</em>
                       您的称呼：
                   </label>
                   <input name="txtuser" type="text" id="txtuser" class="subinput">
               </li>
               <li>
                   <label class="lab">
-                      <em class="red">*</em>
                       问题主题：
                   </label>
                   <input name="txtuser" type="text" id="txtthem" class="subinput">
               </li>
               <li>
                   <label class="lab">
-                      <em class="red">*</em>
                       问题内容：
                   </label>
                   <div class="neir">

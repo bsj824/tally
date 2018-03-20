@@ -14,8 +14,11 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-Route::Auth();
+/*Route::middleware(['auth'])->group(function () {
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/index', 'IndexController@index');
+});*/
+Route::Auth();
+Route::get('/index', 'IndexController@index');
+Route::get('feed',function (){
+    return view('feedback');
 });

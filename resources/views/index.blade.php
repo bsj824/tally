@@ -43,8 +43,7 @@
         </div>
     </div>
 </div>
-
-@component('layouts.foot')
+@component('nav.foot')
 @endcomponent
 </body>
 </html>
