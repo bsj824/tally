@@ -2,96 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>个人资料</title>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="./lib/es5/es5-sham.min.js"></script>
-    <script type="text/javascript" src="./lib/es5/es5-shim.min.js"></script>
-    <script type="text/javascript" src="./lib/respond/respond.min.js"></script>
-    <script type="text/javascript" src="./lib/html5shiv/html5.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="./lib/slick/slick.min.css">
-    <link rel="stylesheet" href="./lib/slick/slick-theme.min.css">
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/个人.css">
+    <link rel="stylesheet" href="{{asset('css/personal.css')}}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_vu6jdu48wvims4i.css">
+
 </head>
 <body>
 <div class="head">
     <div class="header">
         <div class="c_left">
-            <img src="img/返回.png">
+            <a href=""><img src="{{asset('img/return1.png')}}"></a>
         </div>
         <div class="c_right">
             <h3 class="my">编辑资料</h3>
         </div>
     </div>
 </div>
+<form method="post" action="{{url('user')}}">
+    {{csrf_field()}}
 <div class="main">
     <div class="c_list">
         <ul>
-            <a href="">
-                <li>
-                    <h4 class="f">头像</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">签名</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
+            <li>
+                <h4 class="f">头像</h4>
+                <i class="iconfont icon-tianjiatupian" style="font-size: 22px;">
+                    <input  type="file" name="avatar">
+                </i>
+            </li>
         </ul>
     </div>
     <div class="c_list">
         <ul>
-            <a href="">
-                <li>
-                    <h4 class="f">昵称</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">性别</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">生日</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
+            <li>
+                <div class="g_left">
+                    <h4>个签</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="sign" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>昵称</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="name" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>性别</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="sex" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>生日</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="birthday" >
+                </div>
+            </li>
+
         </ul>
     </div>
     <div class="c_list">
         <ul>
-            <a href="">
-                <li>
-                    <h4 class="f">职业</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">公司</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">学校</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <h4 class="f">所在地</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-            </a>
+
+            <li >
+                <div class="g_left">
+                    <h4>职业</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="vocation" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>公司</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="company" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>学校</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="school" >
+                </div>
+            </li>
+            <li >
+                <div class="g_left">
+                    <h4>所在地</h4>
+                </div>
+                <div class="g_right">
+                    <input type="text" class="gq" name="location" >
+                </div>
+            </li>
         </ul>
     </div>
 </div>
+<button>提交</button>
+</form>
 </body>
 </html>

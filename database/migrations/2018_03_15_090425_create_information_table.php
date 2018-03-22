@@ -18,6 +18,7 @@ class CreateInformationTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('sign')->commen('个性签名');
             $table->string('name')->commen('昵称');
+            $table->string('avatar');
             $table->unsignedTinyInteger('sex')->default(2)->comment('性别 1-男 2-女');
             $table->string('birthday')->nullable()->comment('生日');
             $table->string('vocation')->nullable()->comment('职业');

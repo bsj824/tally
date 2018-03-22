@@ -63,7 +63,7 @@
           </ul>
       </div>
     </div>
-    <button>搜索</button>
+    <button>提交</button>
 </form>
 </body>
 </html>

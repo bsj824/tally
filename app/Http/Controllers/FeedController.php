@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FeedbackRequest;
 use App\Model\feedback;
 use Illuminate\Http\Request;
 
 class FeedController extends Controller
 {
     /**
+     * 返回反馈页面
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -16,27 +18,17 @@ class FeedController extends Controller
     {
         return view('feedback');
     }
-
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
+     * 添加反馈信息并返回首页
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FeedbackRequest $request)
     {
         $request->all();
-        Feedback::create([
+        $feedback = Feedback::create([
            'nickname' =>$request->nickname,
             'theme' =>$request->theme,
             'details'=>$request->details,
@@ -44,50 +36,12 @@ class FeedController extends Controller
             'qq' =>$request->qq,
             'e_mail' =>$request->e_mail,
         ]);
+        if ($feedback == true){
+            echo "<script language=javascript>alert('您的问题我们会及时解决！');</script>";
+            return redirect()->action('IndexController@index');
+        }else{
+            return  redirect('feedback');
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
