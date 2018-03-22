@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<form method="post" action="" class="forml">
+<form method="post"  action="{{url('/feed')}}"  class="forml">
+    {{csrf_field()}}
     <div class="head">
         <div class="logo">
             <span>问题反馈</span>
@@ -21,20 +22,20 @@
                   <label class="lab">
                       您的称呼：
                   </label>
-                  <input name="txtuser" type="text" id="txtuser" class="subinput">
+                  <input name="nickname" type="text" id="txtuser" class="subinput">
               </li>
               <li>
                   <label class="lab">
                       问题主题：
                   </label>
-                  <input name="txtuser" type="text" id="txtthem" class="subinput">
+                  <input name="theme" type="text" id="txtthem" class="subinput">
               </li>
               <li>
                   <label class="lab">
                       问题内容：
                   </label>
                   <div class="neir">
-                      <textarea name="txtcontent" id="txtcontent" class="subtxt">
+                      <textarea name="details" id="txtcontent" class="subtxt">
                       </textarea>
                   </div>
               </li>
@@ -45,23 +46,24 @@
                   <label class="lab">
                       手机号：
                   </label>
-                  <input name="txtuser" type="text" id="txtphone" class="subinput">
+                  <input name="phone" type="text" id="txtphone" class="subinput">
               </li>
               <li>
                   <label class="lab">
                       QQ：
                   </label>
-                  <input name="txtuser" type="text" id="txtQQ" class="subinput">
+                  <input name="qq" type="text" id="txtQQ" class="subinput">
               </li>
               <li>
                   <label class="lab">
                       邮箱：
                   </label>
-                  <input name="txtuser" type="text" id="txtemail" class="subinput">
+                  <input name="e_mail" type="text" id="txtemail" class="subinput">
               </li>
           </ul>
       </div>
     </div>
+    <button>搜索</button>
 </form>
 </body>
 </html>

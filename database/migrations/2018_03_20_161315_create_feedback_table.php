@@ -18,8 +18,8 @@ class CreateFeedbackTable extends Migration
             $table->string('nickname')->comment('问题反馈用户名称');
             $table->string('theme')->comment('问题主题');
             $table->string('details')->comment('问题详情');
-            $table->unsignedInteger('phone');
-            $table->unsignedInteger('qq');
+            $table->string('phone');
+            $table->string('qq');
             $table->string('e_mail');
             $table->timestamps();
         });

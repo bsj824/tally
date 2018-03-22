@@ -19,6 +19,4 @@
 });*/
 Route::Auth();
 Route::get('/index', 'IndexController@index');
-Route::get('feed',function (){
-    return view('feedback');
-});
+Route::resource('/feed', 'FeedController');
