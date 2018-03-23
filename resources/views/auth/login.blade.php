@@ -53,13 +53,13 @@
 
         </label>
     </div>
-
-    </form>
     <div class="btn-row">
             <button type="submit" class="qdl">
                 <em class="sub-txt">登录</em>
             </button>
      </div>
+
+</form>
 </div>
 </body>
 @endsection
