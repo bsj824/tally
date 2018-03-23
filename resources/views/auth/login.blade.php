@@ -47,10 +47,7 @@
         </div>
     <div class="foot_cnt">
         <label>
-            {{--<input type="checkbox" class="icons"  style="width: 20px;height: 20px">--}}
             <input value="remember me" type="checkbox" name="remember">自动登录
-            {{--<a href="" class="wjmm" target="_blank">忘记密码</a>--}}
-
         </label>
     </div>
     <div class="btn-row">

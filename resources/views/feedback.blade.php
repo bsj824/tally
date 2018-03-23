@@ -23,12 +23,22 @@
                       您的称呼：
                   </label>
                   <input name="nickname" type="text" id="txtuser" class="subinput">
+                  @if ($errors->has('nickname'))
+                      <span class="help-block">
+                                        <strong>{{ $errors->first('nickname') }}</strong>
+                                    </span>
+                  @endif
               </li>
               <li>
                   <label class="lab">
                       问题主题：
                   </label>
                   <input name="theme" type="text" id="txtthem" class="subinput">
+                  @if ($errors->has('theme'))
+                      <span class="help-block">
+                                        <strong>{{ $errors->first('theme') }}</strong>
+                                    </span>
+                  @endif
               </li>
               <li>
                   <label class="lab">
@@ -37,6 +47,11 @@
                   <div class="neir">
                       <textarea name="details" id="txtcontent" class="subtxt">
                       </textarea>
+                      @if ($errors->has('details'))
+                          <span class="help-block">
+                                        <strong>{{ $errors->first('details') }}</strong>
+                                    </span>
+                      @endif
                   </div>
               </li>
           </ul>
@@ -47,18 +62,33 @@
                       手机号：
                   </label>
                   <input name="phone" type="text" id="txtphone" class="subinput">
+                  @if ($errors->has('phone'))
+                      <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                  @endif
               </li>
               <li>
                   <label class="lab">
                       QQ：
                   </label>
                   <input name="qq" type="text" id="txtQQ" class="subinput">
+                  @if ($errors->has('qq'))
+                      <span class="help-block">
+                                        <strong>{{ $errors->first('qq') }}</strong>
+                                    </span>
+                  @endif
               </li>
               <li>
                   <label class="lab">
                       邮箱：
                   </label>
                   <input name="e_mail" type="text" id="txtemail" class="subinput">
+                  @if ($errors->has('e_mail'))
+                      <span class="help-block">
+                                        <strong>{{ $errors->first('e_mail') }}</strong>
+                                    </span>
+                  @endif
               </li>
           </ul>
       </div>

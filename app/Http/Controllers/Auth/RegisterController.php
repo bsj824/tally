@@ -48,13 +48,16 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'phone' => 'required',
+            'phone' => 'required|unique:users',
             'password' => 'required|min:6',
             'captcha' => 'required|captcha',
         ],[
+            'captcha.required'=>'验证码不为空',
+            'captcha.captcha'=>'验证码错误',
             'name.required'=>'用户名不为空',
             'phone.required'=>'手机号不为空',
             'password.min'=>'密码不能少于6位',
+            'phone.unique'=>'该手机号已被注册',
         ]);
     }
 

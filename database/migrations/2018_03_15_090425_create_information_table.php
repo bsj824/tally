@@ -16,7 +16,7 @@ class CreateInformationTable extends Migration
         Schema::create('information', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->string('sign')->commen('个性签名');
+            $table->string('sign')->nulladle()->commen('个性签名');
             $table->string('name')->commen('昵称');
             $table->string('avatar');
             $table->unsignedTinyInteger('sex')->default(2)->comment('性别 1-男 2-女');

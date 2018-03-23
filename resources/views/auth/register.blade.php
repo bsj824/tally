@@ -75,9 +75,9 @@
                             <div class="sjh">
                                 <div class="s_rel">
                                     <input type="password" class="qmm" name="password_confirmation" placeholder="确认密码" data-type="password" data-error="确认密码" data-error-empty="确认密码" required>
-                                    @if ($errors->has(' password_confirmation'))
+                                    @if ($errors->has('password_confirmation'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first(' password_confirmation') }}</strong>
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
                                     </span>
                                     @endif
                                 </div>
