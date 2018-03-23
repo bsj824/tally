@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
 .head{
     width: 100%;
-    height: 100px;
+    height: 50px;
     background: #2875B1;
 }
 .header{
-    height: 100px;
+    height: 50px;
     position: relative;
 }
 .header .c_left{

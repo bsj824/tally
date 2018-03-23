@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    list-style-type: none;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+.head .header{
+    width:100%;
+    height: 60px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+.header .h_title{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top:6%;
+    text-align: center;
+}
+.h_title .h_test{
+    display: inline-block;
+    font-size: 18px;
+    color: #ff4f3f;
+    font-weight: 300;
+    letter-spacing:3.5px;
+    padding-top: 11px;
+    margin: 0 auto;
+}
+
+.head .h_fh{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 4% 3px;
+}
+.icon-return{
+    color: #ff4f3f;
+}
+
+.list{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.list .l_x{
+    height: 30px;
+    border-radius: 1px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.list .l_x li{
+    padding: 5px 20px;
+    height: 29px;
+    float: left;
+    border-radius: 1px;
+    display: inline-block;
+}
+.l_x li .l_zc{
+    display: inline-block;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    font-weight: 200;
+    margin: 3px 30px;
+
+}
+.action {
+    border: 1px solid #ff4f3f;
+}
+
+.sr{
+    padding: 0 20px;
+    height: 50px;
+    background: #ff4f3f;
+    margin-top: 20px;
+}
+
+
+.sr .s_cont{
+    height: 50px;
+    margin: auto;
+}
+
+.sr .s_cont #cooking{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding-top: 14px;
+}
+
+.sr .s_cont input{
+    width:150px;
+    height: 50px;
+    float: right;
+    border:0px;
+    background: none;
+    outline:none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.tb{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+.tb .tb_list{
+    height: 200px;
+    margin: auto;
+}
+.tb_list .type{
+    width: 100%;
+    height: 200px;
+    list-style-type: none;
+}
+.tb_list .type li{
+    width: 30px;
+    height: 50px;
+    float: left;
+    padding: 22px;
+}
+
+.icon-tubiaozhizuomoban{
+    color: #ff4f3f;
+}
+.tb_list .type p{
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+.icon-jiaotong{
+    color: #006633;
+}
+.icon-gouwuche{
+    color:#2875B1;
+}
+.icon-juzhudi{
+    color: #927947;
+}
+.icon-yule{
+    color: #ab9797;
+}
+.icon-yiliao{
+    color: red;
+}
+.icon-jiaoyu{
+    color: #ff6600;
+}
+.icon-fengturenqing{
+    color: #BEAA7E;
+}
