@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>我的</title>
-    <link rel="stylesheet" href="css/MY.css">
+    <link rel="stylesheet" href="{{asset('css/MY.css')}}">
 </head>
 <body>
 <div class="head">
@@ -13,7 +13,7 @@
             <h3 class="my">我的</h3>
         </div>
         <div class="c_right">
-            <img src="img/设置%20.png">
+            <img src="{{asset('img/setting.png')}}">
         </div>
     </div>
 </div>
@@ -22,30 +22,30 @@
             <ul>
                 <a href="">
                     <li>
-                        <img src="img/头像%20.png">
+                        <img src="img/avatar.png">
                         <h4 class="f">未登录</h4>
-                        <div class="icon"><img src="img/返回%20(6).png"></div>
+                        <div class="icon"><img src="img/return.png"></div>
                     </li>
                 </a>
-                <a href="">
+                <a href="{{url('user')}}">
                 <li>
-                    <img src="img/个人资料.png">
+                    <img src="{{asset('img/information.png')}}">
                     <h4 class="f">个人资料</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
+                    <div class="icon"><img src="img/return.png"></div>
                 </li>
                 </a>
                 <a href="">
                 <li>
                     <img src="img/分享.png">
                     <h4 class="f">分享到</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
+                    <div class="icon"><img src="img/return.png"></div>
                 </li>
                 </a>
-                <a href="">
+              {{--  <a href="">
                 <li>
                     <img src="img/登录.png">
                     <h4 class="f">登录</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
+                    <div class="icon"><img src="img/return.png"></div>
                 </li>
                 </a>
                 <a href="">
@@ -54,7 +54,7 @@
                     <h4 class="f">注册</h4>
                     <div class="icon"><img src="img/返回%20(6).png"></div>
                 </li>
-                </a>
+                </a>--}}
             </ul>
         </div>
 </div>

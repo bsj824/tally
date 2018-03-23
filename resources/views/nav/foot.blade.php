@@ -1,4 +1,4 @@
-@component('alert')
+
 <div class="foot">
     <ul class="footer">
         <a href="">
@@ -25,7 +25,7 @@
                 </div>
             </li>
         </a>
-        <a href="">
+        <a href="{{url('feed')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-yijianfankui" style="font-size: 22px;color: #fff"></i>
@@ -33,7 +33,7 @@
                 </div>
             </li>
         </a>
-        <a href="">
+        <a href="{{url('backend')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-wode" style="font-size: 22px;color: #fff"></i>
@@ -43,4 +43,3 @@
         </a>
     </ul>
 </div>
-    @endcomponent

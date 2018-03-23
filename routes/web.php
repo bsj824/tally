@@ -14,8 +14,18 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+/*Route::middleware(['auth'])->group(function () {
+    Route::get('backend/create','BackendController@create');
+});*/
 Route::Auth();
+Route::get('/index', function (){
+    return view('index');
+});
+Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
+Route::resource('/backend', 'BackendController');
+Route::resource('/user', 'UserController');
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/index', 'IndexController@index');
+Route::get('/logout',function (){
+    Auth::logout();
+    return redirect('register');
 });
