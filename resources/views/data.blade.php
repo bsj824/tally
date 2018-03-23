@@ -19,6 +19,9 @@
         </div>
     </div>
 </div>
+<div class="tx">
+d   d
+</div>
 <form method="post" action="{{url('user')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 <div class="main">

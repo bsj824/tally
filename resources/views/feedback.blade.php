@@ -63,7 +63,11 @@
           </ul>
       </div>
     </div>
-    <button>提交</button>
+    <div class="btn-row">
+                <button type="submit" class="qdl">
+                    <em class="sub-txt">提交</em>
+                </button>
+    </div>
 </form>
 </body>
 </html>
