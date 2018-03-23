@@ -24,6 +24,7 @@ Route::get('/index', function (){
 Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
 Route::resource('/backend', 'BackendController');
 Route::resource('/user', 'UserController');
+
 Route::get('/logout',function (){
     Auth::logout();
     return redirect('register');

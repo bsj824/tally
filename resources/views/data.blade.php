@@ -19,7 +19,7 @@
         </div>
     </div>
 </div>
-<form method="post" action="{{url('user')}}">
+<form method="post" action="{{url('user')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 <div class="main">
     <div class="c_list">

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use app\Handles;
+use App\Handles\ImageUploadHandles;
 use App\Model\User;
 use Illuminate\Http\Request;
 
@@ -39,17 +39,17 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Handles $handles)
+    public function store(Request $request, ImageUploadHandles $uploader)
     {
-        $this->authorize('update');
         $data = $request->all();
-        if ($request->avatar){
-            $result = $handles->save($request->avatar,362);
-            if ($request){
 
+        if ($request->avatar){
+            $result = $uploader->save($request->avatar,362);
+            if ($request){
+                $data['avatar'] = $result['path'];
             }
         }
-
+        User::created($data);
     }
 
     /**
