@@ -3,48 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>记账本</title>
-    <link rel="stylesheet" href="{!! asset('css/homepage.css') !!}">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_rkm0p7cteoupu8fr.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_lb7hcph6enxywrk9.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_0adi9ftru1xj38fr.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_y1ylhihsienj0pb9.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_584848_9ssyy7qoyz2utyb9.css">
+    <title></title>
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_599606_jumgvj3639639pb9.css">
 </head>
+
 <body>
+<div>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
 <div class="head">
-    <div class="left">
-        <h3 class="title">摇钱树</h3>
-    </div>
-</div>
-<div class="main">
-    <div class="main_h">
-        <img src="img/002.png">
-        <div class="wp-title_content">
-            <h3 class="tb">摇钱树理念</h3>
-        </div>
-    </div>
-    <div class="main_c">
-        <div class="c_list">
-            <ul>
-                <li class="first">
-                    <a href="">摇钱树简介</a>
-                    <p>摇钱树账本以一种中国风的画面感呈现于人们的眼前。此账本最大的特点它可以分类记账，每种记账本都有属于它自己的分类特色；用户可以自动设置自己所喜欢的皮肤来设置记账本的颜色；此账本同时也包含了支出、收入、问题反馈等功能。</p>
-                </li>
-                <li class="first">
-                    <a href="">摇钱树使用</a>
-                    <p>它的使用简单、明了、直观。</p>
-                </li>
-                <li class="first">
-                    <a href="">摇钱树管理</a>
-                    <p>摇钱树账本管理是通过数据库去管理这款记账本，安全性能强，管理力度高；用户可以放心的去使用这款记账本。</p>
-                </li>
-            </ul>
+    <div class="header">
+        <div class="h_title">
+            <h3 class="h_test">摇钱树</h3>
         </div>
     </div>
 </div>
-@component('nav.foot')
-@endcomponent
+<div class="jz">
+    <a href="{{url('backend')}}">
+        <button class="bt">
+            <p>记一笔</p>
+        </button>
+    </a>
+</div>
+
+<div class="sr">
+    <ul>
+        <li>
+            <label class="l_sr" >收入</label>
+            @php
+                $userid = \Illuminate\Support\Facades\Auth::id();
+                $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'pay')->sum('money');
+            @endphp
+            @if(\Illuminate\Support\Facades\Auth::check())
+            <div type="text" class="i_sr">￥{{$sum}}</div>
+                @else
+                <div type="text" class="i_sr">￥0.00</div>
+                @endif
+        </li>
+        @php
+            $userid = \Illuminate\Support\Facades\Auth::id();
+            $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'income')->sum('money');
+        @endphp
+        <li>
+            <label class="l_sr" >支出</label>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                <div type="text" class="i_sr">￥{{$sum}}</div>
+            @else
+                <div type="text" class="i_sr">￥0.00</div>
+            @endif
+        </li>
+    </ul>
+</div>
+
+<div class="foot" >
+    @component('nav.foot')
+    @endcomponent
+</div>
 </body>
 </html>
-

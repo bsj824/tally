@@ -12,7 +12,9 @@
 <div class="head">
     <div class="header">
         <div class="h_fh">
-            <i class="iconfont icon-return" style="font-size: 24px;"></i>
+            <a href="{{url('index')}}">
+            <i class="iconfont icon-return" style="font-size: 24px; "></i>
+            </a>
         </div>
         <div class="h_title">
             <h3 class="h_test">日常账本</h3>

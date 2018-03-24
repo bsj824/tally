@@ -24,6 +24,7 @@ Route::Auth();
 Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
 Route::resource('/backend', 'BackendController');
 Route::resource('/user', 'UserController');
+Route::resource('/index', 'IndexController');
 
 /*Route::get('/logout',function (){
     Auth::logout();
