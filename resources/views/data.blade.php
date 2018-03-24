@@ -12,7 +12,7 @@
 <div class="head">
     <div class="header">
         <div class="c_left">
-            <a href=""><img src="{{asset('img/return1.png')}}"></a>
+            <a href="{{url('backend')}}"><img src="{{asset('img/return1.png')}}"></a>
         </div>
         <div class="c_right">
             <h3 class="my">编辑资料</h3>
@@ -31,6 +31,9 @@
             <li>
                 <h4 class="f">头像</h4>
                 <i class="iconfont icon-tianjiatupian" style="font-size: 22px;">
+                    {{--@if($information->avatar)
+                        <img src="{{ $information->avatar }}" class="thumbnail img-responsive" width="200">
+                    @endif--}}
                     <input  type="file" name="avatar">
                 </i>
             </li>

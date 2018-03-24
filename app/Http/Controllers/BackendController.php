@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Information;
 use Illuminate\Http\Request;
 
 class BackendController extends Controller
@@ -14,6 +15,7 @@ class BackendController extends Controller
      */
     public function index()
     {
+
         return view('me');
     }
 

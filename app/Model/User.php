@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * 关联用户信息
+     */
+    public function information()
+    {
+        return $this->hasOne('app\Model\Information');
+    }
 }

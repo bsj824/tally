@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Handles\ImageUploadHandles;
-use App\Model\User;
+use App\Http\Requests\UserRequest;
+use App\Model\Information;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -18,9 +20,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Information $information)
     {
-        return view('data');
+
+        return view('data',['information'=>$information]);
     }
 
     /**
@@ -39,18 +42,19 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, ImageUploadHandles $uploader)
+    public function store(UserRequest $request, ImageUploadHandles $uploader)
     {
         $data = $request->all();
-
         if ($request->avatar){
             $result = $uploader->save($request->avatar,362);
             if ($request){
                 $data['avatar'] = $result['path'];
+                $data['user_id'] = Auth::id();
             }
         }
-        User::created($data);
-    }
+        Information::create($data);
+        return redirect('user');
+   }
 
     /**
      * Display the specified resource.
@@ -71,7 +75,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $information = Information::where('user_id',$id)->first();
+        return view('updatedata',['information'=>$information]);
     }
 
     /**

@@ -27,7 +27,17 @@
                         <div class="icon"><img src="img/return.png"></div>
                     </li>
                 </a>
-                <a href="{{url('user')}}">
+                @php
+                    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->get();
+                @endphp
+                @if($information)
+                    <a href="{{route('user.edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">
+                        @else
+                            <a href="{{url('user')}}">
+                                @endif
+
+              {{--  <a href="{{url('user')}}">
+                    <a href="{{url('user/{user}/edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">--}}
                 <li>
                     <img src="{{asset('img/information.png')}}">
                     <h4 class="f">个人资料</h4>
@@ -41,20 +51,6 @@
                     <div class="icon"><img src="img/return.png"></div>
                 </li>
                 </a>
-              {{--  <a href="">
-                <li>
-                    <img src="img/登录.png">
-                    <h4 class="f">登录</h4>
-                    <div class="icon"><img src="img/return.png"></div>
-                </li>
-                </a>
-                <a href="">
-                <li>
-                    <img src="img/仪器注册.png">
-                    <h4 class="f">注册</h4>
-                    <div class="icon"><img src="img/返回%20(6).png"></div>
-                </li>
-                </a>--}}
             </ul>
         </div>
 </div>
