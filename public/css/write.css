@@ -159,3 +159,44 @@ a{
 .icon-fengturenqing{
     color: #BEAA7E;
 }
+
+
+
+
+.foot{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right,#ff6600 ,#ff3300);
+    position: fixed;
+    bottom: 0;
+}
+.foot .footer{
+    list-style-type: none;
+    width: 100%;
+    height: 60px;
+}
+.foot .footer li{
+    width: 16%;
+    height: 60px;
+    float: left;
+    padding: 7px;
+}
+.iconfont .icon-yijianfankui{
+    font-size: 22px;
+    color: #fff;
+}
+.footer a{
+    text-decoration: none;
+}
+.foot .footer li h4{
+    font-weight: 200;
+    color: #fff;
+}
+.list_f{
+    margin-top: 5px;
+    text-align: center;
+
+}
+.foot_title{
+    font-size: 14px;
+}
