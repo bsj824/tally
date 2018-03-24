@@ -23,19 +23,19 @@ class BackendController extends Controller
     }
 
     /**
-     * 显示个人资料页面
+     *
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-
+        return view('income');
     }
 
     /**
      * Store a newly created resource in storage.
-     *进行收入支出存储
+     *进行支出支出存储
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */

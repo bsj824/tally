@@ -12,7 +12,7 @@
 <div class="head">
     <div class="header">
         <div class="h_fh">
-            <a href="{{url('index')}}">
+            <a href="{{url('index')}}" style="text-decoration: none">
             <i class="iconfont icon-return" style="font-size: 24px; "></i>
             </a>
         </div>
@@ -23,16 +23,20 @@
 </div>
 <div class="list">
     <ul class="l_x">
-        <li class="action">
-            <h3 class="l_zc losecount">支出</h3>
+        <a href="{{url('backend')}}">
+        <li class="action" >
+            <h3  class="l_zc losecount">支出</h3>
         </li>
-        <li>
-            <h3 class="l_zc getcount">收入</h3>
+        </a>
+        <a href="{{route('backend.create')}}">
+        <li >
+            <h3  class="l_zc getcount">收入</h3>
         </li>
+        </a>
     </ul>
 </div>
 <div class="sr" style="display: block;">
-    <form action="{{url('backend')}}" method="post" name="ty">
+    <form action="{{url('backend')}}" method="post">
         {{csrf_field()}}
     <div class="s_cont">
         <a name="awd" id="cooking" for="text1" >请选择类型</a>
@@ -78,7 +82,7 @@
                 </li>
                 <li>
                     <i class="iconfont icon-qita" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">其他</p>
+                    <p class="iconfont_text">其他支出</p>
                 </li>
             </ul>
         </div>
@@ -126,7 +130,7 @@
                 </li>
                 <li>
                     <i class="iconfont icon-qita" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">其他</p>
+                    <p class="iconfont_text">其他支出</p>
                 </li>
             </ul>
         </div>

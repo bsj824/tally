@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>我的</title>
     <link rel="stylesheet" href="{{asset('css/MY.css')}}">
 </head>
@@ -18,41 +19,29 @@
     </div>
 </div>
 <div class="main">
-        <div class="c_list">
-            <ul>
-                <a href="">
-                    <li>
-                        <img src="img/avatar.png">
-                        <h4 class="f">未登录</h4>
-                        <div class="icon"><img src="img/return.png"></div>
-                    </li>
-                </a>
-                @php
-                    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
-                @endphp
-                @if($information)
-                    <a href="{{route('user.edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">
-                        @else
-                            <a href="{{url('user')}}">
-                                @endif
+    <div class="c_list">
+        <ul>
 
-              {{--  <a href="{{url('user')}}">
-                    <a href="{{url('user/{user}/edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">--}}
-                <li>
-                    <img src="{{asset('img/information.png')}}">
-                    <h4 class="f">个人资料</h4>
-                    <div class="icon"><img src="img/return.png"></div>
-                </li>
+            @php
+                $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
+            @endphp
+            @if($information)
+                <a href="{{route('user.edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">
+                    @else
+                        <a href="{{url('user')}}">
+                            @endif
+
+                            {{--  <a href="{{url('user')}}">
+                                  <a href="{{url('user/{user}/edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">--}}
+                            <li>
+                                <img src="{{asset('img/information.png')}}">
+                                <h4 class="f">个人资料</h4>
+                                <div class="icon"><img src="img/return.png"></div>
+                            </li>
+                        </a>
                 </a>
-                <a href="">
-                <li>
-                    <img src="img/分享.png">
-                    <h4 class="f">分享到</h4>
-                    <div class="icon"><img src="img/return.png"></div>
-                </li>
-                </a>
-            </ul>
-        </div>
+        </ul>
+    </div>
 </div>
 </body>
 </html>

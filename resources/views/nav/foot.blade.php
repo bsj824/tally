@@ -1,15 +1,7 @@
 
 <div class="foot">
     <ul class="footer">
-        <a href="">
-            <li>
-                <div class="list_f">
-                    <i class="iconfont icon-zhangben" style="font-size: 22px;color: #fff"></i>
-                    <h4 class="foot_title">账本</h4>
-                </div>
-            </li>
-        </a>
-        <a href="">
+        <a href="{{url('backend')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-zhichu"style="font-size: 22px;color: #fff"></i>
@@ -17,7 +9,7 @@
                 </div>
             </li>
         </a>
-        <a href="">
+        <a href="{{url('backend/create')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-shouru" style="font-size: 22px;color: #fff"></i>
@@ -33,7 +25,7 @@
                 </div>
             </li>
         </a>
-        <a href="{{url('backend')}}">
+        <a href="{{route('user.create')}}">
             <li>
                 <div class="list_f">
                     <i class="iconfont icon-mys" style="font-size: 22px;color: #fff"></i>

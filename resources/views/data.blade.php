@@ -30,11 +30,9 @@
             <li>
                 <h4 class="f">头像</h4>
                 <i class="iconfont icon-tianjiatupian" style="font-size: 22px;">
-                    {{--@if($information->avatar)
-                        <img src="{{ $information->avatar }}" class="thumbnail img-responsive" width="200">
-                    @endif--}}
-                    <input  type="file" name="avatar">
+                    <input  type="file" name="avatar" id="avatar">
                 </i>
+                <img id="preview" src="" alt="">
             </li>
         </ul>
     </div>
@@ -45,7 +43,7 @@
                     <h4>个签</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="sign" >
+                    <input type="text" class="gq" name="sign" value="">
                 </div>
             </li>
             <li >
@@ -116,4 +114,11 @@
 <button>提交</button>
 </form>
 </body>
+<script>
+    var previewImage = document.querySelector("#preview")
+    var oAvatar = document.querySelector("#avatar")
+    oAvatar.onchange = function (e){
+        previewImage.src = window.URL.createObjectURL((e.srcElement.files[0]))
+    }
+</script>
 </html>

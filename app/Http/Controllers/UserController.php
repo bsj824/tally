@@ -33,9 +33,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('me');
     }
-
     /**
      * Store a newly created resource in storage.
      *
