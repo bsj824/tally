@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>note</title>
-    <link rel="stylesheet" href="css/ixom.css">
+    <link rel="stylesheet" href="{{asset('css/ixom.css')}}">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_599606_1y4av07qsx4unmi.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
 
 <div class="sr" style="display: block;">
     <div class="s_cont">
-        <label id="cooking" for="text1">餐饮</label>
+        <label id="cooking" for="text1">请选择类型</label>
         <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''">
     </div>
     <div class="tb">

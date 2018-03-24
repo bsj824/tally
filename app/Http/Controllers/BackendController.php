@@ -41,7 +41,7 @@ class BackendController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->get('cooking_type'));
+        //dd($request->all());
         $classid = classify::where('name',$request->get('cooking_type'))->first();
         $class = $request->all();
         $class['user_id'] = Auth::id();
