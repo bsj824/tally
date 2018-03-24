@@ -28,7 +28,7 @@
                     </li>
                 </a>
                 @php
-                    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->get();
+                    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
                 @endphp
                 @if($information)
                     <a href="{{route('user.edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">

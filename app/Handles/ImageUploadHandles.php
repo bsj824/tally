@@ -9,9 +9,9 @@ class ImageUploadHandles
     public function save($file, $width_max = 0)
     {
         //拼接图片的存放路径
-        $folder_name ="uploads" . DIRECTORY_SEPARATOR . "img" . date('Ym', time()) . DIRECTORY_SEPARATOR . date('d', time()) ;
+        $folder_name =  "/uploads" . DIRECTORY_SEPARATOR . "img" . date('Ym', time()) . DIRECTORY_SEPARATOR . date('d', time()) ;
         //拼接存放到数据库的路径
-        $upload_path = DIRECTORY_SEPARATOR . $folder_name;
+        $upload_path = public_path().DIRECTORY_SEPARATOR. $folder_name;
         //确保后缀名一直存在，因为从剪切板里黏贴时后缀名为空
         $extension = strtolower($file->getClientOriginalExtension()) ?: 'png';
         //拼接文件名
@@ -28,7 +28,7 @@ class ImageUploadHandles
 //            $this->reduceSize($upload_path.'/'.$file_name,$width_max);
 //        }
         return [
-            'path' => "$folder_name" . DIRECTORY_SEPARATOR . "$file_name",
+            'path' => config('app.url') . "$folder_name" . DIRECTORY_SEPARATOR . "$file_name",
         ];
     }
 }

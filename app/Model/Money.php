@@ -4,14 +4,13 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Information extends Model
+class Money extends Model
 {
     protected $fillable = [
-        'user_id','sign','avatar','sex','birthday','vacation','company','school','location'
+        'user_id','class_id','money'
     ];
 
     protected $hidden = [
         'created_at','updated_at'
     ];
-
 }

@@ -27,8 +27,7 @@
             <ul>
                 <li>
                     <h4 class="f">头像</h4>
-                    <img src="{{ url('/').$information->avatar }}">
-                </li>
+                    <img src="{{ $information->avatar }}">
                 </li>
             </ul>
         </div>
@@ -39,15 +38,7 @@
                         <h4>个签</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="sign">sasasdas
-                    </div>
-                </li>
-                <li>
-                    <div class="g_left">
-                        <h4>昵称</h4>
-                    </div>
-                    <div class="g_right">
-                        <input type="text" class="gq" name="name">
+                        <input type="text"  value="{{$information->sign}}" class="gq" name="sign">
                     </div>
                 </li>
                 <li>
@@ -55,7 +46,7 @@
                         <h4>性别</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="sex">
+                        <input type="text" class="gq" value="{{$information->sex}}" name="sex">
                     </div>
                 </li>
                 <li>
@@ -63,21 +54,19 @@
                         <h4>生日</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="birthday">
+                        <input type="text" class="gq" value="{{$information->birthday}}" name="birthday">
                     </div>
                 </li>
-
             </ul>
         </div>
         <div class="c_list">
             <ul>
-
                 <li>
                     <div class="g_left">
                         <h4>职业</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="vocation">
+                        <input type="text"  value="{{$information->vocation}}" class="gq" name="vocation">
                     </div>
                 </li>
                 <li>
@@ -85,7 +74,7 @@
                         <h4>公司</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="company">
+                        <input type="text" value="{{$information->company}}" class="gq" name="company">
                     </div>
                 </li>
                 <li>
@@ -93,7 +82,7 @@
                         <h4>学校</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="school">
+                        <input type="text" class="gq" name="school" value="{{$information->school}}">
                     </div>
                 </li>
                 <li>
@@ -101,7 +90,7 @@
                         <h4>所在地</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" name="location">
+                        <input type="text" class="gq" name="location" value="{{$information->location}}">
                     </div>
                 </li>
             </ul>

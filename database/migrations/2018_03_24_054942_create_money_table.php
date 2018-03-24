@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePayTable extends Migration
+class CreateMoneyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreatePayTable extends Migration
      */
     public function up()
     {
-        Schema::create('pay', function (Blueprint $table) {
+        Schema::create('money', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('pay_event')->comment("支出事件");
-            $table->integer('pay_money')->comment("支出金额");
             $table->integer('user_id');
+            $table->integer('class_id');
+            $table->enum('type' ,['pay', 'income']);
+            $table->integer('money');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreatePayTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pay');
+        Schema::dropIfExists('money');
     }
 }

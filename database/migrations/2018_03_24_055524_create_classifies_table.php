@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIncomeTable extends Migration
+class CreateClassifiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateIncomeTable extends Migration
      */
     public function up()
     {
-        Schema::create('income', function (Blueprint $table) {
+        Schema::create('classifies', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('income_event')->comment("收入事件");
-            $table->integer('income_money')->comment("收入金额");
-            $table->integer('user_id');
+            $table->string('name')->comment('分类名');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateIncomeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('income');
+        Schema::dropIfExists('classifies');
     }
 }

@@ -81,5 +81,6 @@
   }
    
   exports.KeyBoard = KeyBoard;
+    var olabel=document.querySelector(".js-label-ele"),txt=olabel.innerText;
  
 })(window);

@@ -18,9 +18,9 @@
     Route::get('backend/create','BackendController@create');
 });*/
 Route::Auth();
-Route::get('/index', function (){
-    return view('index');
-});
+/*Route::get('/home', function (){
+    return view('home');
+});*/
 Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
 Route::resource('/backend', 'BackendController');
 Route::resource('/user', 'UserController');

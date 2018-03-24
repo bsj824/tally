@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'phone','password'
+        'name', 'phone'
     ];
 
     /**
@@ -27,11 +27,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /**
-     * 关联用户信息
-     */
-    public function information()
-    {
-        return $this->hasOne('app\Model\Information');
-    }
+
 }
