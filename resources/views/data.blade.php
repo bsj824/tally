@@ -20,7 +20,8 @@
     </div>
 </div>
 <div class="tx">
-d   d
+    <div class="sctx">
+    </div>
 </div>
 <form method="post" action="{{url('user')}}" enctype="multipart/form-data">
     {{csrf_field()}}
