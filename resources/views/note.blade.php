@@ -33,8 +33,9 @@
 
 <div class="sr" style="display: block;">
     <div class="s_cont">
-        <label id="cooking" for="text1">餐饮</label>
-        <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''">
+        <a id="cooking" for="text1">餐饮</a>
+        <input type="hidden" id="cooking_input" name="cooking_type">
+        <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
     </div>
     <div class="tb">
         <div class="tb_list">
@@ -82,7 +83,7 @@
 <div class="sr"  style="display: none;">
     <div class="s_cont">
         <label id="cooking" for="text1">餐饮</label>
-        <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''">
+        <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
     </div>
     <div class="tb">
         <div class="tb_list">
@@ -171,7 +172,7 @@
         </ul>
     </div>
 </body>
-<script type="text/javascript" src="js/calculatet.js"></script>
+<script type="text/javascript" src="{{asset('js/calculatet.js')}}"></script>
 <script type="text/javascript">
     var cookingLabel = document.querySelector('#cooking');
     var items = document.querySelectorAll('.type>li');
@@ -183,6 +184,7 @@
         const text = item.querySelector('.iconfont_text').innerText;
         topBar.style.backgroundColor = color;
         cookingLabel.innerText = text;
+        cookingInput.innerText = text;
     }
     });
     /*es5*/
