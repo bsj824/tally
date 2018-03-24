@@ -4,7 +4,7 @@
         <a href="">
             <li>
                 <div class="list_f">
-                    <i class="iconfont icon-icon-test" style="font-size: 22px;color: #fff"></i>
+                    <i class="iconfont icon-zhangben" style="font-size: 22px;color: #fff"></i>
                     <h4 class="foot_title">账本</h4>
                 </div>
             </li>
@@ -28,7 +28,7 @@
         <a href="{{url('feed')}}">
             <li>
                 <div class="list_f">
-                    <i class="iconfont icon-yijianfankui" style="font-size: 22px;color: #fff"></i>
+                    <i class="iconfont icon-fankui" style="font-size: 22px;color: #fff"></i>
                     <h4 class="foot_title">反馈</h4>
                 </div>
             </li>
@@ -36,7 +36,7 @@
         <a href="{{url('backend')}}">
             <li>
                 <div class="list_f">
-                    <i class="iconfont icon-wode" style="font-size: 22px;color: #fff"></i>
+                    <i class="iconfont icon-mys" style="font-size: 22px;color: #fff"></i>
                     <h4 class="foot_title">我的</h4>
                 </div>
             </li>
