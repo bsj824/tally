@@ -7,14 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/slick-carousel/1.8.1/slick.min.css">
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdn.bootcss.com/slick-carousel/1.8.1/slick.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="css/wel.css">
+	<link rel="stylesheet" href="{{asset('css/wel.css')}}">
 </head>
 <body>
 	<div class="banner" id="banner">
 		<div class="slider">
             <div class="main">
                 <div class="content">
-                    <img src="img/ld.jpg" id="img">
+                    <img src="{{asset('img/ld.jpg')}}" id="img">
                 </div>
                 <div class="m_title">
                     <div class="box">
@@ -24,7 +24,7 @@
             </div>
             <div class="main" id="main">
                 <div class="content">
-                    <img src="img/ld.jpg">
+                    <img src="{{asset('img/ld.jpg')}}">
                 </div>
                 <div class="m_title">
                     <div class="box">
@@ -34,7 +34,7 @@
             </div>
             <div class="main" id="main">
                 <div class="content">
-                    <img src="img/ld.jpg">
+                    <img src="{{asset('img/ld.jpg')}}">
                 </div>
                 <div class="m_title">
                     <div class="box">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="btm">
-                    <a href="">
+                    <a href="{{url('login')}}">
                         <button type="button" class="dl">
                             <span >登录</span>
                         </button>

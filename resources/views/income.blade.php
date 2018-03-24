@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@
     <div class="header">
         <div class="h_fh">
             <a href="{{url('index')}}" style="text-decoration: none">
-            <i class="iconfont icon-return" style="font-size: 24px;"></i>
+                <i class="iconfont icon-return" style="font-size: 24px;"></i>
             </a>
         </div>
         <div class="h_title">
@@ -24,61 +23,60 @@
 <div class="list">
     <ul class="l_x">
         <a href="{{url('backend')}}">
-        <li  >
-            <h3 href="{{url('backend')}}" class="l_zc losecount">支出</h3>
-        </li>
+            <li  >
+                <h3 href="{{url('backend')}}" class="l_zc losecount">支出</h3>
+            </li>
         </a>
         <a href="{{route('backend.create')}}">
-        <li class="action" >
-            <h3  href="{{route('backend.create')}}" class="l_zc getcount">收入</h3>
-        </li>
+            <li class="action" >
+                <h3  href="{{route('backend.create')}}" class="l_zc getcount">收入</h3>
+            </li>
         </a>
     </ul>
 </div>
 
 
 <div class="sr" style="display: block;">
-    <form action="{{url('backend')}}" method="post">
+    <form action="{{url('store')}}"  method="post" >
         {{csrf_field()}}
-    <div class="s_cont">
-
-        <a id="cooking" for="text1">请选择类型</a>
-        <input type="hidden" name="cooking_type" id="cooking">
-        <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
-    </div>
+        <div class="s_cont">
+            <a id="cooking" for="text1">请选择类型</a>
+            <input type="hidden" name="cooking_type" id="cooking_type">
+            <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
+        </div>
         <button>提交</button>
     </form>
 </div>
-    <div class="tb">
-        <div class="tb_list">
-            <ul class="type">
-                <li>
-                    <i class="iconfont icon-renminbi1688" style="font-size: 24px;"></i>
-                    <p class="iconfont_text">工资</p>
-                </li>
-                <li>
-                    <i class="iconfont icon-hongbao" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">红包</p>
-                </li>
-                <li>
-                    <i class="iconfont icon-jianzhi" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">兼职</p>
-                </li>
-                <li>
-                    <i class="iconfont icon-baoxiao" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">报销</p>
-                </li>
-                <li>
-                    <i class="iconfont icon-qianbao" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">钱包</p>
-                </li>
-                <li>
-                    <i class="iconfont icon-qita" style=" font-size: 24px;"></i>
-                    <p class="iconfont_text">其他收入</p>
-                </li>
-            </ul>
-        </div>
+<div class="tb">
+    <div class="tb_list">
+        <ul class="type">
+            <li>
+                <i class="iconfont icon-renminbi1688" style="font-size: 24px;"></i>
+                <p class="iconfont_text">工资</p>
+            </li>
+            <li>
+                <i class="iconfont icon-hongbao" style=" font-size: 24px;"></i>
+                <p class="iconfont_text">红包</p>
+            </li>
+            <li>
+                <i class="iconfont icon-jianzhi" style=" font-size: 24px;"></i>
+                <p class="iconfont_text">兼职</p>
+            </li>
+            <li>
+                <i class="iconfont icon-baoxiao" style=" font-size: 24px;"></i>
+                <p class="iconfont_text">报销</p>
+            </li>
+            <li>
+                <i class="iconfont icon-qianbao" style=" font-size: 24px;"></i>
+                <p class="iconfont_text">钱包</p>
+            </li>
+            <li>
+                <i class="iconfont icon-qita" style=" font-size: 24px;"></i>
+                <p class="iconfont_text">其他收入</p>
+            </li>
+        </ul>
     </div>
+</div>
 <div class="sr"  style="display: none;">
     <div class="s_cont">
         <label id="cooking" for="text1">餐饮</label>
@@ -121,6 +119,7 @@
 <script type="text/javascript" src="{{asset('js/calculatet.js')}}"></script>
 <script type="text/javascript">
     var cookingLabel = document.querySelector('#cooking');
+    var cookingInput = document.querySelector('#cooking_type');
     var items = document.querySelectorAll('.type>li');
     var topBar = document.querySelector('.sr');
     /*es6*/
@@ -151,8 +150,6 @@
         var input2 = document.getElementById('text2');
         input1.onclick = function(){
             new KeyBoard(input1);
-            var date = new Date();
-            var myDate = date.getFullYear() + '/' +date.getMonth() + '/' + date.getDate() + '/' + date.getHours() + ':' +date.getMinutes() + ':' + date.getSeconds()
         };
     })();
 </script>

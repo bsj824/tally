@@ -10,25 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
 /*Route::middleware(['auth'])->group(function () {
     Route::get('backend/create','BackendController@create');
+
 });*/
 Route::Auth();
-/*Route::get('/home', function (){
-    return view('home');
-});*/
+
 Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
-Route::resource('/backend', 'BackendController');
-Route::resource('/user', 'UserController');
-Route::get('/index', function (){
-    return view('index');
+Route::resource('/backend', 'BackendController',['only'=>['index','store','create']]);
+Route::resource('/user', 'UserController',['except'=>'destroy','update','show']);
+Route::get('/index', function () {
+    return view('index');//
 });
 
-/*Route::get('/logout',function (){
-    Auth::logout();
-    return redirect('register');
-});*/
+Route::get('show','IndexController@show');
+Route::post('store','IndexController@store');

@@ -43,7 +43,7 @@
                     <h4>个签</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="sign" value="">
+                    <input type="text" class="gq" name="sign" value="{{old('sign')}}">
                 </div>
             </li>
             <li >
@@ -51,7 +51,7 @@
                     <h4>昵称</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="name" >
+                    <input type="text" class="gq" name="name" value="{{old('name')}}">
                 </div>
             </li>
             <li >
@@ -59,7 +59,7 @@
                     <h4>性别</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="sex" >
+                    <input type="text" class="gq" name="sex"  value="{{old('sex')}}">
                 </div>
             </li>
             <li >
@@ -67,21 +67,19 @@
                     <h4>生日</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="birthday" >
+                    <input type="text" class="gq" name="birthday"  value="{{old('birthday')}}">
                 </div>
             </li>
-
         </ul>
     </div>
     <div class="c_list">
         <ul>
-
             <li >
                 <div class="g_left">
                     <h4>职业</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="vocation" >
+                    <input type="text" class="gq" name="vocation" value="{{old('vocation')}}">
                 </div>
             </li>
             <li >
@@ -89,7 +87,7 @@
                     <h4>公司</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="company" >
+                    <input type="text" class="gq" name="company"  value="{{old('company')}}">
                 </div>
             </li>
             <li >
@@ -97,7 +95,7 @@
                     <h4>学校</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="school" >
+                    <input type="text" class="gq" name="school"  value="{{old('school')}}">
                 </div>
             </li>
             <li >
@@ -105,7 +103,7 @@
                     <h4>所在地</h4>
                 </div>
                 <div class="g_right">
-                    <input type="text" class="gq" name="location" >
+                    <input type="text" class="gq" name="location" value="{{old('location')}}">
                 </div>
             </li>
         </ul>
