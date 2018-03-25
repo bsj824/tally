@@ -23,6 +23,20 @@
 <form method="post" action="{{url('user')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 <div class="main">
+<div class="c_list">
+              <ul>
+                  <a href="">
+                      <li>
+                          <h4 class="f">头像</h4>
+                          <div class="stx">
+
+                                   <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 22px;height: 22px">
+                                   <img src="img/tx.png" id="preview" src="" alt="" style="width:22px;height:22px;">
+
+                          </div>
+                      </li>
+                  </a>
+              </ul>
     <div class="c_list">
         <ul>
             <li>

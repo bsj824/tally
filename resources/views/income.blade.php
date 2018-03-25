@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>note</title>
     <link rel="stylesheet" href="{{asset('css/ixom.css')}}">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_599606_1y4av07qsx4unmi.css">

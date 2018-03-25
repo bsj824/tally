@@ -23,6 +23,18 @@
 <form method="post" action="{{url('user',['id'=>\Illuminate\Support\Facades\Auth::id()])}}" enctype="multipart/form-data">
     {{csrf_field()}}
     <div class="main">
+      <div class="c_list">
+              <ul>
+                  <a href="">
+                      <li>
+                          <h4 class="f">头像</h4>
+                          <i class="iconfont icon-tianjiatupian" style="font-size: 22px;">
+                              <input  type="file">
+                          </i>
+                      </li>
+                  </a>
+              </ul>
+          </div>
         <div class="c_list">
             <ul>
                 <li>
