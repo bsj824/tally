@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="btm">
-                    <a href="{{url('login')}}">
+                    <a href="{{url('index')}}">
                         <button type="button" class="dl">
                             <span >进入首页</span>
                         </button>

@@ -39,8 +39,8 @@
         </button>
     </a>
 </div>
-
 <div class="sr">
+    @include('layouts.message')
     <ul>
         <li>
             <label class="l_sr" >收入</label>

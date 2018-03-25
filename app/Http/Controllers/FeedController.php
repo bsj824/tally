@@ -37,8 +37,9 @@ class FeedController extends Controller
             'e_mail' =>$request->e_mail,
         ]);
         if ($feedback == true){
-            echo "<script language=javascript>alert('您的问题我们会及时解决！');</script>";
-            return redirect('index');
+            // echo "<script language=javascript>alert('您的问题我们会及时解决！');</script>";
+
+            return redirect()->route('index')->with('success', '您的问题我们会及时解决');
         }else{
             return  redirect('feedback');
         }
