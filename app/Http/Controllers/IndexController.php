@@ -17,11 +17,12 @@ class IndexController extends Controller
     public function store(Request $request)
     {
         $classid = classify::where('name',$request->get('cooking_type'))->first();
-        $class = $request->all();
-        $class['user_id'] = Auth::id();
-        $class['class_id'] =$classid->id;
-        $class['type'] = 'income';
-        Money::create($class);
+        $data = $request->all();
+        $data['user_id'] = Auth::id();
+        $data['class_id'] =$classid->id;
+        $data['type'] = 'income';
+        Money::create($data);
+        return redirect('index');
 
     }
 }

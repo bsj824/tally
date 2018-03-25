@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/ixom.css')}}">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_599606_1y4av07qsx4unmi.css">
 </head>
-<>
+<body>
 <div class="head">
     <div class="header">
         <div class="h_fh">
@@ -25,23 +25,23 @@
     <ul class="l_x">
         <a href="{{url('backend')}}">
             <li>
-                <h3 href="{{url('backend')}}" class="l_zc losecount">支出</h3>
+                <h3 class="l_zc losecount">支出</h3>
             </li>
         </a>
         <a href="{{route('backend.create')}}">
             <li class="action">
-                <h3 href="{{route('backend.create')}}" class="l_zc getcount">收入</h3>
+                <h3 class="l_zc getcount">收入</h3>
             </li>
         </a>
     </ul>
 </div>
 
-<form action="{{url('backend')}}" method="post">
+<form action="{{url('store')}}" method="post">
     {{csrf_field()}}
     <div class="sr" style="display: block;">
         <div class="s_cont">
-            <a id="cooking" for="text1">请选择类型</a>
-            <input type="hidden" name="cooking_type" id="cooking">
+            <a name="awd" id="cooking" for="text1" >请选择类型</a>
+            <input type="hidden" name="cooking_type" id="cooking_type">
             <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
         </div>
     </div>
@@ -122,21 +122,19 @@
 <script type="text/javascript" src="{{asset('js/calculatet.js')}}"></script>
 <script type="text/javascript">
     var cookingLabel = document.querySelector('#cooking');
+    var cookingInput = document.querySelector('#cooking_type');
     var items = document.querySelectorAll('.type>li');
     var topBar = document.querySelector('.sr');
     /*es6*/
-    items.forEach(item = > {
-        item.onclick = () =
-    >
-    {
+    items.forEach(item => {
+        item.onclick = () => {
         const color = getComputedStyle(item.querySelector('.iconfont')).color
         const text = item.querySelector('.iconfont_text').innerText;
         topBar.style.backgroundColor = color;
         cookingLabel.innerText = text;
         cookingInput.value = text;
     }
-    })
-    ;
+    });
     /*es5*/
     // for (item of items) {
     //     (function(item){
@@ -150,13 +148,11 @@
     // }
     /*点击响应*/
     /*计算器*/
-    (function () {
+    (function(){
         var input1 = document.getElementById('text1');
         var input2 = document.getElementById('text2');
-        input1.onclick = function () {
+        input1.onclick = function(){
             new KeyBoard(input1);
-            var date = new Date();
-            var myDate = date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate() + '/' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
         };
     })();
 </script>

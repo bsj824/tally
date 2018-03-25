@@ -38,7 +38,7 @@ class FeedController extends Controller
         ]);
         if ($feedback == true){
             echo "<script language=javascript>alert('您的问题我们会及时解决！');</script>";
-            return redirect()->action('IndexController@index');
+            return redirect('index');
         }else{
             return  redirect('feedback');
         }

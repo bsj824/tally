@@ -49,6 +49,7 @@ class BackendController extends Controller
         $class['class_id'] =$classid->id;
         $class['type'] = 'pay';
         Money::create($class);
+        return redirect('index');
 
     }
 

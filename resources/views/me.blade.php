@@ -13,9 +13,6 @@
         <div class="c_left">
             <h3 class="my">我的</h3>
         </div>
-        <div class="c_right">
-            <img src="{{asset('img/setting.png')}}">
-        </div>
     </div>
 </div>
 <div class="tx">
@@ -25,7 +22,7 @@
         <img src="{{asset('img/tx.png')}}" id="preview" src="" alt="">
     </div>
       <a href="">
-          <p class="gq">Hello Wolrd</p>
+              <p class="gq">Hello Wolrd</p>
       </a>
   </div>
 </div>
@@ -41,11 +38,7 @@
                     @else
                         <a href="{{url('user')}}">
                             @endif
-
-                            {{--  <a href="{{url('user')}}">
-                                  <a href="{{url('user/{user}/edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">--}}
                             <li>
-                                <img src="{{asset('img/information.png')}}">
                                 <h4 class="f">个人资料</h4>
                                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                             </li>
@@ -63,7 +56,7 @@
                          <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                      </li>
                 </a>
-                <a href="">
+                <a href="{{url('feed')}}">
                    <li>
                      <h4 class="f">问题反馈</h4>
                         <div class="icon"><img src="{{asset('img/return.png')}}"></div>
@@ -95,9 +88,11 @@
      </ul>
 </div>
 <div class="btn-row">
-    <button type="submit" class="qdl">
+    <a href="{{url('logout')}}">
+    <button type="submit" class="qdl" >
         <em class="sub-txt">退出登录</em>
     </button>
+    </a>
 </div>
 </div>
 </body>

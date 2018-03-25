@@ -22,6 +22,9 @@ Route::resource('/user', 'UserController',['except'=>'destroy','update','show'])
 Route::get('/index', function () {
     return view('index');//
 });
-
+Route::get('logout',function (){
+    Auth::logout();
+    return view('index');
+});
 Route::get('show','IndexController@show');
 Route::post('store','IndexController@store');
