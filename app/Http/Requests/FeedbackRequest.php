@@ -38,8 +38,8 @@ class FeedbackRequest extends FormRequest
     {
        return [
            'nickname.required' => '请输入用户昵称',
-           'theme.required' => '请输入反馈问题主题',
-           'details.required' => '请输入反馈问题正文',
+           'theme.required' => '请输入反馈问题',
+           'details.required' => '请输入反馈正文',
            'phone.required' => '请输入手机号码',
            'phone.max' => '手机号码为11位',
            'phone.min' => '手机号码为11位',
