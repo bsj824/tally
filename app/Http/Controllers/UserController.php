@@ -52,7 +52,7 @@ class UserController extends Controller
             }
         }
         Information::create($data);
-        return redirect('user');
+        return redirect('user/create');
    }
 
     /**
@@ -85,12 +85,19 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id,ImageUploadHandles $handles)
     {
-        $information = Information::find($id)->first();
-        dd($information);
+        $information = Information::where('user_id',$id)->first();
         $data = $request->all();
-        Information::update($data);
+        if ($request->avatar){
+            $result = $handles->save($request->avatar,362);
+            if ($request){
+                $data['avatar'] = $result['path'];
+                $data['user_id'] = Auth::id();
+            }
+        }
+        Information::updated($data);
+        return redirect()->action('UserController@create');
     }
 
 

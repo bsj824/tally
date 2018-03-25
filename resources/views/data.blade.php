@@ -31,7 +31,7 @@
                           <div class="stx">
 
                                    <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 22px;height: 22px">
-                                   <img src="img/tx.png" id="preview" src="" alt="" style="width:22px;height:22px;">
+                                   <img src="{{asset('img/tx.png')}}" id="preview" src="" alt="" style="width:22px;height:22px;">
 
                           </div>
                       </li>

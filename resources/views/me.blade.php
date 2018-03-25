@@ -15,11 +15,14 @@
         </div>
     </div>
 </div>
+@php
+    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
+@endphp
 <div class="tx">
   <div class="cont">
     <div class="i_tx">
         <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
-        <img src="{{asset('img/tx.png')}}" id="preview" src="" alt="">
+        <img src="{{$information->avatar}}" id="preview" alt="">
     </div>
       <a href="">
               <p class="gq">Hello Wolrd</p>
@@ -29,11 +32,7 @@
 <div class="main">
     <div class="c_list">
         <ul>
-
-            @php
-                $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
-            @endphp
-            @if($information)
+            @if($information == true)
                 <a href="{{route('user.edit',['id'=>\Illuminate\Support\Facades\Auth::id()])}}">
                     @else
                         <a href="{{url('user')}}">
