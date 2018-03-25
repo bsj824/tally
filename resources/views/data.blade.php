@@ -30,7 +30,6 @@
                     <li>
                         <h4 class="f">头像</h4>
                         <div class="stx">
-
                             <input type="file" name="avatar" id="avatar"
                                    style="position: absolute;opacity: 0;width: 22px;height: 22px">
                             <img src="{{asset('img/tx.png')}}" id="preview" src="" alt=""

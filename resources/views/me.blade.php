@@ -24,9 +24,9 @@
         <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
         <img src="{{$information->avatar}}" id="preview" alt="">
     </div>
-      <a href="">
-              <p class="gq">Hello Wolrd</p>
-      </a>
+
+         <input type="test" label="个性签名" placeholder="Hello World" class="gxqm" value="Hello World" required >
+
   </div>
 </div>
 <div class="main">
