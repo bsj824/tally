@@ -52,7 +52,32 @@ class ClassifySeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now(),
         ]);
         DB::table('classifies')->insert([
-            'name' => '其他收入',
+            'name' => '工资',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+        DB::table('classifies')->insert([
+            'name' => '红包',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+        DB::table('classifies')->insert([
+            'name' => '兼职',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+        DB::table('classifies')->insert([
+            'name' => '报销',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+        DB::table('classifies')->insert([
+            'name' => '钱包',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+        DB::table('classifies')->insert([
+            'name' => '其他支出',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now(),
         ]);

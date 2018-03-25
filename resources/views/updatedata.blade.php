@@ -20,17 +20,9 @@
         </div>
     </div>
 </div>
-<form method="post" action="{{url('user')}}" enctype="multipart/form-data">
+<form method="post" action="{{url('user',['id'=>\Illuminate\Support\Facades\Auth::id()])}}" enctype="multipart/form-data">
     {{csrf_field()}}
     <div class="main">
-        <div class="c_list">
-            <ul>
-                <li>
-                    <h4 class="f">头像</h4>
-                    <img src="{{ $information->avatar }}">
-                </li>
-            </ul>
-        </div>
         <div class="c_list">
             <ul>
                 <li>

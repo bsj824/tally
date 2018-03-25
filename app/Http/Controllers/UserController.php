@@ -63,7 +63,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-
+        //
     }
 
     /**
@@ -87,22 +87,11 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $information = Information::find($id)->first();
+        dd($information);
+        $data = $request->all();
+        Information::update($data);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 
-    public function showwelcome()
-    {
-        return view('welcome');
-    }
 }
