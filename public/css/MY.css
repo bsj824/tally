@@ -8,7 +8,7 @@ a{
 .head{
     width: 100%;
     height: 60px;
-    background: #c1c1c1;
+    background: #949191;
 }
 .header{
     height: 60px;
@@ -50,7 +50,7 @@ a{
 .tx{
     width: 100%;
     height: 150px;
-    background: #ffcccc;
+    background: #c55c5c;
 }
 
 .tx .i_tx{
@@ -125,4 +125,34 @@ a{
     width: 16px;
     height: 16px;
     margin: 15px 10px;
+}
+
+
+.btn-row{
+    margin-top: 50px;
+    text-align: center;
+    outline: 0;
+}
+.btn-row .qdl{
+    font-size: 16px;
+    padding: 11px 0;
+    background-color: #ff4f3f;
+    border-radius: 4px;
+    color: #fff;
+    border:1px solid #ff4f3f;
+    display: block;
+    width: 100px;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: auto;
+}
+.sub-txt {
+    display: inline-block;
+    font-style: normal;
 }

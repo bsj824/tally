@@ -94,7 +94,11 @@
           </a>
      </ul>
 </div>
-
+<div class="btn-row">
+    <button type="submit" class="qdl">
+        <em class="sub-txt">退出登录</em>
+    </button>
+</div>
 </div>
 </body>
 <script>
