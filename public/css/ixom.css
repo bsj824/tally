@@ -40,6 +40,8 @@ a{
     height: 24px;
     float: left;
     margin: 4% 3px;
+    position: absolute;
+    z-index: 10;
 }
 .icon-return{
     color: #ff4f3f;
@@ -195,4 +197,34 @@ a{
 }
 .foot_title{
     font-size: 14px;
+}
+
+
+.btn-row{
+    margin: 0 0 20px;
+    text-align: center;
+    outline: 0;
+}
+.btn-row .qdl{
+    font-size: 16px;
+    padding: 11px 0;
+    background-color: #ff4f3f;
+    border-radius: 4px;
+    color: #fff;
+    border:1px solid #ff4f3f;
+    display: block;
+    width: 100px;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: auto;
+}
+.sub-txt {
+    display: inline-block;
+    font-style: normal;
 }

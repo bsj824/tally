@@ -44,7 +44,7 @@
                 <div class="btm">
                     <a href="{{url('login')}}">
                         <button type="button" class="dl">
-                            <span >登录</span>
+                            <span >进入首页</span>
                         </button>
                     </a>
                 </div>

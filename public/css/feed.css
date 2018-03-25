@@ -33,6 +33,8 @@ a{
 }
 
  img{
+     width: 18px;
+     height: 18px;
      float: left;
      margin: 8px 10px;
  }
