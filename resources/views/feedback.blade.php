@@ -12,7 +12,7 @@
     {{csrf_field()}}
     <div class="head">
         <a href="">
-          <img src="img/返回(1).png" >
+          <img src="{{asset('img/return.png')}}"style="width:16px;height:16px;margin:10px;" >
         </a>
         <div class="logo">
             <span>问题反馈</span>
