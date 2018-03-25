@@ -11,6 +11,9 @@
 <form method="post"  action="{{url('/feed')}}"  class="forml">
     {{csrf_field()}}
     <div class="head">
+        <a href="">
+          <img src="img/返回(1).png" >
+        </a>
         <div class="logo">
             <span>问题反馈</span>
         </div>
@@ -93,11 +96,12 @@
           </ul>
       </div>
     </div>
-    <div class="btn-row">
-                <button type="submit" class="qdl">
-                    <em class="sub-txt">提交</em>
-                </button>
-    </div>
+  </div>
+   <div class="btn-row">
+           <button type="submit" class="qdl">
+           <em class="sub-txt">提交</em>
+        </button>
+      </div>
 </form>
 </body>
 </html>

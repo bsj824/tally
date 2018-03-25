@@ -32,3 +32,4 @@ Route::get('/index', function (){
     Auth::logout();
     return redirect('register');
 });*/
+Route::get('welcome','UserController@showwelcome');

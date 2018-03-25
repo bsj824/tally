@@ -46,7 +46,6 @@
         <input type="hidden" name="cooking_type" id="cooking">
         <input id="text1" style="text-align: right;" value="0.00" onfocus="this.value=''" name="money">
     </div>
-        <button>提交</button>
     </form>
 </div>
     <div class="tb">
@@ -116,7 +115,11 @@
     </div>
 
 </div>
-
+<div class="btn-row">
+                <button type="submit" class="qdl">
+                    <em class="sub-txt">提交</em>
+                </button>
+    </div>
 </body>
 <script type="text/javascript" src="{{asset('js/calculatet.js')}}"></script>
 <script type="text/javascript">

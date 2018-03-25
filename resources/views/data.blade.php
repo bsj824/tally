@@ -19,23 +19,10 @@
         </div>
     </div>
 </div>
-<div class="tx">
 
-</div>
 <form method="post" action="{{url('user')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 <div class="main">
-    <div class="c_list">
-        <ul>
-            <li>
-                <h4 class="f">头像</h4>
-                <i class="iconfont icon-tianjiatupian" style="font-size: 22px;">
-                    <input  type="file" name="avatar" id="avatar">
-                </i>
-                <img id="preview" src="" alt="">
-            </li>
-        </ul>
-    </div>
     <div class="c_list">
         <ul>
             <li>
@@ -58,9 +45,14 @@
                 <div class="g_left">
                     <h4>性别</h4>
                 </div>
-                <div class="g_right">
-                    <input type="text" class="gq" name="sex" >
-                </div>
+                <label for="sex-man" class="radio_label checked">
+                    <input type="radio" value="1" checked="checked" id="sex-man" name="sex" />
+                       男
+                </label>
+                <label for="sex-female" class="radio_label">
+                    <input type="radio" value="2" id="sex-female" name="sex" />
+                     女
+                </label>
             </li>
             <li >
                 <div class="g_left">
@@ -111,7 +103,11 @@
         </ul>
     </div>
 </div>
-<button>提交</button>
+<div class="btn-row">
+                <button type="submit" class="qdl">
+                    <em class="sub-txt">提交</em>
+                </button>
+    </div>
 </form>
 </body>
 <script>

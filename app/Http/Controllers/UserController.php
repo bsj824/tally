@@ -63,7 +63,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -99,5 +99,10 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showwelcome()
+    {
+        return view('welcome');
     }
 }
