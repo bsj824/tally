@@ -1,8 +1,4 @@
-body{
-    background-image: url("../img/hw 1.jpg");
-    background-size: 100% 1500px;
 
-}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +7,7 @@ body{
     width: 100%;
     height: 120px;
     border-bottom: 1px solid #e3e3e3;
+    background: linear-gradient(to right,#ff6600 ,#ff3300);
 }
 .header{
     height: 120px;
@@ -55,7 +52,7 @@ body{
     font-size: 24px;
     font-weight: 400;
     float: left;
-    color: #4e4c4c;
+    color: #fff;
 }
 
 

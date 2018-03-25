@@ -27,7 +27,7 @@
             </div>
             <div class="main">
                 <div class="content">
-                    <img src="img/ld.jpg" id="img">
+                    <img src="img/ld.jpg" >
                 </div>
                 <div class="m_title">
                     <div class="box">
@@ -40,7 +40,7 @@
             </div>
             <div class="main">
                             <div class="content">
-                                <img src="img/ld.jpg" id="img">
+                                <img src="img/ld.jpg" >
                             </div>
                             <div class="m_title">
                                 <div class="box">
@@ -76,7 +76,8 @@
 	banner.style.height = height + 'px';
 
 
-    var main = document.getElementById('img');
+
+    var img = document.getElementById('img');
     img.style.width = width + 'px';
     img.style.height = height + 'px';
 </script>
