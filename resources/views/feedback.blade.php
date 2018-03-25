@@ -11,7 +11,7 @@
 <form method="post"  action="{{url('/feed')}}"  class="forml">
     {{csrf_field()}}
     <div class="head">
-        <a href="">
+        <a href="{{asset('index')}}">
           <img src="{{asset('img/return2.png')}}" >
         </a>
         <div class="logo">

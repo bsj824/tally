@@ -45,7 +45,7 @@
                         <h4>个签</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text"  value="{{$information->sign}}" class="gq" name="sign">
+                        <input type="text"  value="{{$information->sign}}" class="gq" name="sign" >
                     </div>
                 </li>
                 <li >
@@ -66,7 +66,7 @@
                         <h4>生日</h4>
                     </div>
                     <div class="g_right">
-                        <input type="text" class="gq" value="{{$information->birthday}}" name="birthday">
+                        <input type="text" class="gq" value="{{$information->birthday}}" name="birthday" >
                     </div>
                 </li>
             </ul>
