@@ -35,14 +35,13 @@
         </a>
     </ul>
 </div>
+<form action="{{url('backend')}}" method="post">
+    {{csrf_field()}}
 <div class="sr" style="display: block;">
-    <form action="{{url('backend')}}" method="post">
-        {{csrf_field()}}
     <div class="s_cont">
         <a name="awd" id="cooking" for="text1" >请选择类型</a>
         <input type="hidden" name="cooking_type" id="cooking_type">
         <input id="text1" style="text-align: right;" onfocus="this.value=''" name="money" value="0.00">
-
     </div>
 
     <div class="tb">
@@ -136,12 +135,12 @@
         </div>
     </div>
 </div>
-</div>
 <div class="btn-row">
                 <button type="submit" class="qdl">
                     <em class="sub-txt">提交</em>
                 </button>
     </div>
+</form>
 </body>
 <script type="text/javascript" src="{{asset('js/calculatet.js')}}"></script>
 <script type="text/javascript">

@@ -22,7 +22,7 @@
   <div class="cont">
     <div class="i_tx">
         <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
-        <img src="img/tx.png" id="preview" src="" alt="">
+        <img src="{{asset('img/tx.png')}}" id="preview" src="" alt="">
     </div>
       <a href="">
           <p class="gq">Hello Wolrd</p>
@@ -47,26 +47,26 @@
                             <li>
                                 <img src="{{asset('img/information.png')}}">
                                 <h4 class="f">个人资料</h4>
-                                <div class="icon"><img src="img/return.png"></div>
+                                <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                             </li>
                         </a>
                 </a>
                 <a href="">
                     <li>
                        <h4 class="f">账号管理</h4>
-                          <div class="icon"><img src="img/返回%20(6).png"></div>
+                          <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                     </li>
                 </a>
                 <a href="">
                     <li>
                        <h4 class="f">安全中心</h4>
-                         <div class="icon"><img src="img/返回%20(6).png"></div>
+                         <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                      </li>
                 </a>
                 <a href="">
                    <li>
                      <h4 class="f">问题反馈</h4>
-                        <div class="icon"><img src="img/返回%20(6).png"></div>
+                        <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                     </li>
                 </a>
         </ul>
@@ -77,19 +77,19 @@
           <a href="">
               <li>
                  <h4 class="f">隐私</h4>
-                 <div class="icon"><img src="img/返回%20(6).png"></div>
+                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
               </li>
           </a>
           <a href="">
                <li>
                  <h4 class="f">通用</h4>
-                  <div class="icon"><img src="img/返回%20(6).png"></div>
+                  <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                </li>
           </a>
           <a href="">
                <li>
                  <h4 class="f">关于我们</h4>
-                 <div class="icon"><img src="img/返回%20(6).png"></div>
+                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                </li>
           </a>
      </ul>
