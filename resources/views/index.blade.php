@@ -43,7 +43,7 @@
 <div class="sr">
     <ul>
         <li>
-            <label class="l_sr" >收入</label>
+            <label class="l_sr" >本月收入</label>
             @php
                 $userid = \Illuminate\Support\Facades\Auth::id();
                 $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'pay')->sum('money');
@@ -59,7 +59,7 @@
             $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'income')->sum('money');
         @endphp
         <li>
-            <label class="l_sr" >支出</label>
+            <label class="l_sr" >本月支出</label>
             @if(\Illuminate\Support\Facades\Auth::check())
                 <div type="text" class="i_sr">￥{{$sum}}</div>
             @else

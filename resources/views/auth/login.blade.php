@@ -13,11 +13,12 @@
             <a href="{{route('register')}}" class="reg">注册新用户</a>
         </div>
         <div class="title">
-            <h1 class="logo">财爷</h1>
+            <h1 class="logo">摇钱树</h1>
         </div>
     </div>
 </div>
 <div class="dl_box">
+  <div class="box">
     <form action="{!! route('login') !!}" method="post" class="dl_form">
         {!! csrf_field() !!}
         <div class="dl_title">
@@ -54,6 +55,7 @@
             <button type="submit" class="qdl">
                 <em class="sub-txt">登录</em>
             </button>
+     </div>
      </div>
     </form>
 </div>
