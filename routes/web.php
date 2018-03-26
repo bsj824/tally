@@ -20,8 +20,8 @@ Route::resource('/feed', 'FeedController',['only'=>['index','store']]);
 Route::resource('/backend', 'BackendController',['only'=>['index','store','create']]);
 Route::resource('/user', 'UserController',['except'=>'destroy','update','show']);
 Route::get('/index', function () {
-    return view('index');//
-});
+    return view('index');
+})->name('index');
 Route::get('logout',function (){
     Auth::logout();
     return view('index');

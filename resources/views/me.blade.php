@@ -22,7 +22,11 @@
   <div class="cont">
     <div class="i_tx">
         <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
+        @if(isset($information->avatar))
         <img src="{{$information->avatar}}" id="preview" alt="">
+            @else
+            <img src="{{asset('img/avatar.png')}}" id="preview" alt="">
+            @endif
     </div>
 
          <input type="test" label="个性签名" placeholder="Hello World" class="gxqm" value="Hello World" required >

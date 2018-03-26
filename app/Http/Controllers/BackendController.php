@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\DB;
 
 class BackendController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth',['only'=>['store']]);
+    }
     /**
      * 返回'添加收入支出金额'页面
      * Display a listing of the resource.

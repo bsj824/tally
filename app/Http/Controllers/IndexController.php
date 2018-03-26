@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class IndexController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth',['only'=>['store']]);
+    }
     public function show()
     {
         return view('welcome');

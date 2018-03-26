@@ -32,6 +32,7 @@
         </div>
     </div>
 </div>
+
 <div class="jz">
     <a href="{{url('backend')}}">
         <button class="bt">
@@ -39,13 +40,12 @@
         </button>
     </a>
 </div>
-
 <div class="sr">
     <ul>
         <li>
             <label class="l_sr" >本月收入</label>
             @php
-                $userid = \Illuminate\Support\Facades\Auth::id();
+                $userid =\Auth::id();
                 $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'pay')->sum('money');
             @endphp
             @if(\Illuminate\Support\Facades\Auth::check())
