@@ -18,6 +18,7 @@
     </div>
 </div>
 <div class="dl_box">
+  <div class="box">
     <form action="{!! route('login') !!}" method="post" class="dl_form">
         {!! csrf_field() !!}
         <div class="dl_title">
@@ -54,6 +55,7 @@
             <button type="submit" class="qdl">
                 <em class="sub-txt">登录</em>
             </button>
+     </div>
      </div>
     </form>
 </div>

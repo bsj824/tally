@@ -27,6 +27,7 @@
     display: inline-block;
     text-decoration: none;
     width: 100px;
+    color: #fff;
     height: 30px;
     margin-left: 20px;
     border: 1px solid #ccc;
@@ -60,11 +61,12 @@
 
 .main{
     position:absolute;
-    top:50%;
+    top:35%;
     left:50%;
     transform: translate(-50%,-50%);
     display: inline-block;
-    width: 351px;
+    width:555px;
+    height: 600px;
 
 }
 .main .main_content{
@@ -80,8 +82,7 @@
 }
 
 .main_content .title h2{
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 30px;
     line-height: 64px;
 }
 .media{
@@ -92,13 +93,15 @@
 }
 .media .m_box{
     float: left;
-    height: 403px;
+    height: 500px;
+    width: 100%;
 }
 .rel{
     position: relative;
 }
 .sec{
     display: block;
+    margin-left: 10px;
 }
 .sjh{
     margin: 0 0 20px;
@@ -106,14 +109,16 @@
 }
 .s_rel{
     width: 90%;
+    height: 55px;
     position: relative;
 }
 .s_rel input{
+
     display: block;
     width: 100%;
-    height: 28px;
+    height: 55px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -128,9 +133,9 @@
     display: inline-block;
 }
 .yzm .dib input{
+    height: 55px;
     display: block;
     width: 100%;
-    height: 26px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -141,8 +146,7 @@
     border-radius: 4px;
 }
 .yzm .p_yzm{
-    float: right;
-    margin-right: 10px;
+    margin-left: 146px;
 }
 .yzm .p_yzm img{
     height: 30px;
