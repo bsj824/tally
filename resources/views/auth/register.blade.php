@@ -14,7 +14,7 @@
             <a href="{{route('login')}}" class="reg">登录已有账号</a>
         </div>
         <div class="title">
-            <h1 class="logo">财爷</h1>
+            <h1 class="logo">摇钱树</h1>
         </div>
     </div>
 </div>
