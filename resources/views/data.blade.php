@@ -91,22 +91,7 @@
                             <input type="text" class="gq" name="vocation" value="{{old('vocation')}}">
                         </div>
                     </li>
-                    <li>
-                        <div class="g_left">
-                            <h4>公司</h4>
-                        </div>
-                        <div class="g_right">
-                            <input type="text" class="gq" name="company" value="{{old('company')}}">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="g_left">
-                            <h4>学校</h4>
-                        </div>
-                        <div class="g_right">
-                            <input type="text" class="gq" name="school" value="{{old('school')}}">
-                        </div>
-                    </li>
+
                     <li>
                         <div class="g_left">
                             <h4>所在地</h4>
