@@ -8,7 +8,7 @@ a{
 .head{
     width: 100%;
     height: 60px;
-    background: #949191;
+    background: linear-gradient(to right,#ff6600 ,#ff3300);
 }
 .header{
     height: 60px;
@@ -50,7 +50,7 @@ a{
 .tx{
     width: 100%;
     height: 150px;
-    background: #c55c5c;
+    background: #f03713a3;
 }
 
 .tx .i_tx{
@@ -72,6 +72,7 @@ a{
 /*主体*/
 .main{
     width: 100%;
+    height: 550px;
 
 }
 .c_list{
@@ -123,7 +124,7 @@ a{
 
 
 .btn-row{
-    margin-top: 30px;
+    margin-top: 70px;
     text-align: center;
     outline: 0;
 }
@@ -164,3 +165,60 @@ a{
     height: 20px;
     color: #fff;
 }
+
+
+
+.foot{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right,#ff6600 ,#ff3300);
+    position: fixed;
+    bottom: 0;
+}
+.foot .footer{
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.foot .footer li{
+    display: inline-block;
+    padding: 5px 60px;
+    height: 50px;
+}
+.iconfont .icon-yijianfankui{
+    font-size: 22px;
+    color: #fff;
+}
+.footer a{
+    text-decoration: none;
+}
+.foot .footer li h4{
+    font-weight: 200;
+    color: #fff;
+}
+.list_f{
+    margin-top: 5px;
+    text-align: center;
+
+}
+.foot_title{
+    font-size: 14px;
+}
+@media(min-width: 1200px){
+    .foot .footer li{
+        padding:5px 100px}
+}
+@media(min-width: 1060px){
+    .foot .footer li{
+        padding:5px 70px}
+}
+@media(max-width: 760px){
+    .foot .footer li{
+        padding:5px 30px}
+}
+@media(max-width: 490px){
+    .foot .footer li{
+        padding:0px 20px}
+}
+

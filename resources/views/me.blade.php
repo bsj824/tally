@@ -6,6 +6,7 @@
           content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>我的</title>
     <link rel="stylesheet" href="{{asset('css/MY.css')}}">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_599606_jumgvj3639639pb9.css">
 </head>
 <body>
 <div class="head">
@@ -97,6 +98,10 @@
     </button>
     </a>
 </div>
+</div>
+<div class="foot" >
+    @component('nav.foot')
+    @endcomponent
 </div>
 </body>
 <script>

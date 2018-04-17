@@ -28,7 +28,7 @@
                 <form action="{!! route('register') !!}"  method="post" outsubmit="return false" autocomplete="off" class="rel">
                     {!! csrf_field() !!}
                     <div class="sec">
-                        <div class="sec">
+
                             <div class="sjh">
                                 <div class="s_rel">
                                     <input type="tel" maxlength="11" class="mob" name="name" placeholder="用户名" data-error="请输入用户名" data-error-empty="请输入用户名"required>
@@ -92,7 +92,7 @@
                 </form>
             </div>
         </div>
-    </div>
+
 
 </div>
 </body>

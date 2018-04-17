@@ -48,7 +48,8 @@
         </div>
     <div class="foot_cnt">
         <label>
-            <input value="remember me" type="checkbox" name="remember">自动登录
+            <input value="remember me" type="checkbox" name="remember">
+            <span>自动登录</span>
         </label>
     </div>
     <div class="btn-row">

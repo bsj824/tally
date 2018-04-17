@@ -23,16 +23,16 @@
 </div>
 <div class="list">
     <ul class="l_x">
-        <a href="{{url('backend')}}">
         <li class="action" >
-            <h3  class="l_zc losecount">支出</h3>
+            <a href="{{url('backend')}}">
+                <h3  class="l_zc losecount">支出</h3>
+            </a>
         </li>
-        </a>
-        <a href="{{route('backend.create')}}">
         <li >
-            <h3  class="l_zc getcount">收入</h3>
+            <a href="{{route('backend.create')}}">
+                <h3  class="l_zc getcount">收入</h3>
+            </a>
         </li>
-        </a>
     </ul>
 </div>
 <form action="{{url('backend')}}" method="post">

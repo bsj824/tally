@@ -83,27 +83,27 @@
             <div class="tb_list">
                 <ul class="type">
                     <li>
-                        <i class="iconfont icon-renminbi1688" style="font-size: 24px;"></i>
+                        <i class="iconfont icon-renminbi1688" ></i>
                         <p class="iconfont_text">工资</p>
                     </li>
                     <li>
-                        <i class="iconfont icon-hongbao" style=" font-size: 24px;"></i>
+                        <i class="iconfont icon-hongbao" ></i>
                         <p class="iconfont_text">红包</p>
                     </li>
                     <li>
-                        <i class="iconfont icon-jianzhi" style=" font-size: 24px;"></i>
+                        <i class="iconfont icon-jianzhi" ></i>
                         <p class="iconfont_text">兼职</p>
                     </li>
                     <li>
-                        <i class="iconfont icon-baoxiao" style=" font-size: 24px;"></i>
+                        <i class="iconfont icon-baoxiao"></i>
                         <p class="iconfont_text">报销</p>
                     </li>
                     <li>
-                        <i class="iconfont icon-qianbao" style=" font-size: 24px;"></i>
+                        <i class="iconfont icon-qianbao"></i>
                         <p class="iconfont_text">钱包</p>
                     </li>
                     <li>
-                        <i class="iconfont icon-qita" style=" font-size: 24px;"></i>
+                        <i class="iconfont icon-qita" ></i>
                         <p class="iconfont_text">其他收入</p>
                     </li>
                 </ul>
