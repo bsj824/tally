@@ -165,7 +165,7 @@ p{
 
 .bg-bubbles {
     background: linear-gradient(to bottom right, #fff, #f0600f);
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0;
     width: 100%;
