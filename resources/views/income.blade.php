@@ -146,13 +146,6 @@
     //     })(item);
     // }
     /*点击响应*/
-    /*计算器*/
-    (function(){
-        var input1 = document.getElementById('text1');
-        var input2 = document.getElementById('text2');
-        input1.onclick = function(){
-            new KeyBoard(input1);
-        };
-    })();
+
 </script>
 </html>
