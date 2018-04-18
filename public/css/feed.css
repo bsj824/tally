@@ -19,6 +19,17 @@ a{
     margin: 0px auto;
     padding: 5px 0px;
 }
+.head .h_fh{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 4% 3px;
+    position: absolute;
+    z-index: 10;
+}
+.icon-return{
+    color: #fff;
+}
 .forml .head .logo{
     float: left;
     padding-top: 5px;

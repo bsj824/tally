@@ -11,6 +11,11 @@
 <body>
 <div class="head">
     <div class="header">
+        <div class="h_fh">
+            <a href="{{url('index')}}" style="text-decoration: none">
+                <i class="iconfont icon-return" style="font-size: 24px;"></i>
+            </a>
+        </div>
         <div class="c_left">
             <h3 class="my">我的</h3>
         </div>
@@ -98,10 +103,6 @@
     </button>
     </a>
 </div>
-</div>
-<div class="foot" >
-    @component('nav.foot')
-    @endcomponent
 </div>
 </body>
 <script>
