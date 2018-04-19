@@ -22,6 +22,9 @@ class IndexController extends Controller
     {
         $classid = classify::where('name',$request->get('cooking_type'))->first();
         $data = $request->all();
+        if(is_null($request->cooking_type)){
+            echo "<script>alert('请选择账本类型');history.go(-1);</script>";
+        }
         $data['user_id'] = Auth::id();
         $data['class_id'] =$classid->id;
         $data['type'] = 'income';

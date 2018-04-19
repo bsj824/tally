@@ -45,11 +45,12 @@ class BackendController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
         $classid = classify::where('name',$request->get('cooking_type'))->first();
         $class = $request->all();
+        if(is_null($request->cooking_type)){
+           echo "<script>alert('请填写账本类型');history.go(-1);</script>";
+        }
         $class['user_id'] = Auth::id();
-        //dd($classid->id);
         $class['class_id'] =$classid->id;
         $class['type'] = 'pay';
         Money::create($class);

@@ -25,19 +25,19 @@
     $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
 @endphp
 <div class="tx">
-  <div class="cont">
-    <div class="i_tx">
-        <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
-        @if(isset($information->avatar))
-        <img src="{{$information->avatar}}" id="preview" alt="">
+    <div class="cont">
+        <div class="i_tx">
+            <input type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;width: 52px;height: 52px">
+            @if(isset($information->avatar))
+                <img src="{{$information->avatar}}" id="preview" alt="">
             @else
-            <img src="{{asset('img/avatar.png')}}" id="preview" alt="">
+                <img src="{{asset('img/avatar.png')}}" id="preview" alt="">
             @endif
+        </div>
+
+        <input type="test" label="个性签名" placeholder="Hello World" class="gxqm" value="Hello World" required>
+
     </div>
-
-         <input type="test" label="个性签名" placeholder="Hello World" class="gxqm" value="Hello World" required >
-
-  </div>
 </div>
 <div class="main">
     <div class="c_list">
@@ -52,22 +52,22 @@
                                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                             </li>
                         </a>
+                        <a href="{{url('feed')}}">
+                            <li>
+                                <h4 class="f">问题反馈</h4>
+                                <div class="icon"><img src="{{asset('img/return.png')}}"></div>
+                            </li>
+                        </a>
                 </a>
                 <a href="">
                     <li>
-                       <h4 class="f">账号管理</h4>
-                          <div class="icon"><img src="{{asset('img/return.png')}}"></div>
+                        <h4 class="f">账号管理</h4>
+                        <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                     </li>
                 </a>
                 <a href="">
                     <li>
-                       <h4 class="f">安全中心</h4>
-                         <div class="icon"><img src="{{asset('img/return.png')}}"></div>
-                     </li>
-                </a>
-                <a href="{{url('feed')}}">
-                   <li>
-                     <h4 class="f">问题反馈</h4>
+                        <h4 class="f">安全中心</h4>
                         <div class="icon"><img src="{{asset('img/return.png')}}"></div>
                     </li>
                 </a>
@@ -75,40 +75,40 @@
     </div>
     <div class="c_list">
 
-       <ul>
-          <a href="">
-              <li>
-                 <h4 class="f">隐私</h4>
-                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
-              </li>
-          </a>
-          <a href="">
-               <li>
-                 <h4 class="f">通用</h4>
-                  <div class="icon"><img src="{{asset('img/return.png')}}"></div>
-               </li>
-          </a>
-          <a href="">
-               <li>
-                 <h4 class="f">关于我们</h4>
-                 <div class="icon"><img src="{{asset('img/return.png')}}"></div>
-               </li>
-          </a>
-     </ul>
-</div>
-<div class="btn-row">
-    <a href="{{url('logout')}}">
-    <button type="submit" class="qdl" >
-        <em class="sub-txt">退出登录</em>
-    </button>
-    </a>
-</div>
+        <ul>
+            <a href="">
+                <li>
+                    <h4 class="f">隐私</h4>
+                    <div class="icon"><img src="{{asset('img/return.png')}}"></div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <h4 class="f">通用</h4>
+                    <div class="icon"><img src="{{asset('img/return.png')}}"></div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <h4 class="f">关于我们</h4>
+                    <div class="icon"><img src="{{asset('img/return.png')}}"></div>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div class="btn-row">
+        <a href="{{url('logout')}}">
+            <button type="submit" class="qdl">
+                <em class="sub-txt">退出登录</em>
+            </button>
+        </a>
+    </div>
 </div>
 </body>
 <script>
     var previewImage = document.querySelector("#preview")
     var oAvatar = document.querySelector("#avatar")
-    oAvatar.onchange = function (e){
+    oAvatar.onchange = function (e) {
         previewImage.src = window.URL.createObjectURL((e.srcElement.files[0]))
     }
 </script>
