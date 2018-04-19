@@ -35,8 +35,6 @@
             @endif
         </div>
 
-        <input type="test" label="个性签名" placeholder="Hello World" class="gxqm" value="Hello World" required>
-
     </div>
 </div>
 <div class="main">

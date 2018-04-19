@@ -59,7 +59,7 @@ a{
 
 .tx{
     width: 100%;
-    height: 150px;
+    height: 120px;
     background: #f03713a3;
 }
 
@@ -82,7 +82,6 @@ a{
 /*主体*/
 .main{
     width: 100%;
-    height: 550px;
 
 }
 .c_list{
