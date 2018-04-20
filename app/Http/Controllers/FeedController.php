@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\FeedbackRequest;
-use App\Models\feedback;
+use App\Models\Feedback;
 use Illuminate\Http\Request;
 
 class FeedController extends Controller
