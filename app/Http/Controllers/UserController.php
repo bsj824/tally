@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Handles\ImageUploadHandles;
 use App\Http\Requests\UserRequest;
-use App\Model\Information;
+use App\Models\Information;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

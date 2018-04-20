@@ -46,7 +46,7 @@
             <label class="l_sr" >本月总收入</label>
             @php
                 $userid =\Auth::id();
-                $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'income')->sum('money');
+                $sum = \App\Models\Money::where('user_id', $userid)->where('type', 'income')->sum('money');
             @endphp
             @if(\Illuminate\Support\Facades\Auth::check())
             <div type="text" class="i_sr">￥{{$sum}}</div>
@@ -56,7 +56,7 @@
         </li>
         @php
             $userid = \Illuminate\Support\Facades\Auth::id();
-            $sum = \App\Model\Money::where('user_id', $userid)->where('type', 'pay')->sum('money');
+            $sum = \App\Models\Money::where('user_id', $userid)->where('type', 'pay')->sum('money');
         @endphp
         <li>
             <label class="l_sr" >本月总支出</label>

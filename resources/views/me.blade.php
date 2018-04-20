@@ -22,7 +22,7 @@
     </div>
 </div>
 @php
-    $information = \App\Model\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
+    $information = \App\Models\Information::where('user_id',\Illuminate\Support\Facades\Auth::id())->first();
 @endphp
 <div class="tx">
     <div class="cont">

@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\classify;
-use App\Model\Information;
-use App\Model\Money;
+
+use App\Models\classify;
+use App\Models\Money;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class BackendController extends Controller
 {

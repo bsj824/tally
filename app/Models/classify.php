@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Money extends Model
+class classify extends Model
 {
     protected $fillable = [
-        'user_id','class_id','money','type'
+        'name'
     ];
 
     protected $hidden = [
