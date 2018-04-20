@@ -77,7 +77,9 @@ class UserController extends Controller
     public function update(Request $request, $id,ImageUploadHandles $handles)
     {
         $information = Information::where('user_id',$id)->first();
+
         $data = $request->all();
+
         if ($request->avatar){
             $result = $handles->save($request->avatar,362);
             if ($request){
@@ -85,7 +87,8 @@ class UserController extends Controller
                 $data['user_id'] = Auth::id();
             }
         }
-        Information::updated($data);
+        //dd($data);
+        $information->update($data);
         return redirect()->action('UserController@create');
     }
 

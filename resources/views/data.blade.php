@@ -13,7 +13,7 @@
 <div class="head">
     <div class="header">
         <div class="c_left">
-            <a href="{{url('backend')}}"><img src="{{asset('img/return1.png')}}"></a>
+            <a href="{{url('user/create')}}"><img src="{{asset('img/return1.png')}}"></a>
         </div>
         <div class="c_right">
             <h3 class="my">编辑资料</h3>
